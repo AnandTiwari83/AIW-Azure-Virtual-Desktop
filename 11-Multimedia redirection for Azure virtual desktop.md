@@ -14,7 +14,6 @@ In this lab, you will complete the following exercise:
 
 - Exercise 1: Multimedia redirection for Azure virtual desktop
 
-
 ## Exercise 1: Multimedia redirection for Azure virtual desktop
 
 In this exercise, you will configure Multimedia Redirection (MMR) for Azure Virtual Desktop, validate Teams media optimization, and test audio/video redirection by launching a Teams meeting inside the AVD session.

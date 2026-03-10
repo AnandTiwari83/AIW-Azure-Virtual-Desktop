@@ -110,7 +110,11 @@ In this exercise, you enable diagnostics for the AVD workspace by configuring mo
 1. On **CheckAMAConfiguration** page, Select **Session host data settings (1)**. Then, select the **<inject key="Log Analytics Workspace Name	" /> (2)** analytics workspace as the **Workspace destination**.
 
    ![ws name.](media/L2AE2S12.png)
-   
+
+1. Click on the **Create data collection rule**.
+
+   ![ws name.](media/L2AE2S12a.png)
+
 1. On the **Check AMA Configuration** page, scroll down to the **Session hosts missing Azure Monitor extension** section and then click on **Add extension**.
 
    ![ws name.](media/L2AE2S13.png)
@@ -138,13 +142,10 @@ In this exercise, you enable diagnostics for the AVD workspace by configuring mo
 - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 <validation step="53c5dd73-f7c0-41ed-bd9a-9f6a03ef630a" />
-   
-   
-## Summary
 
+## Summary
 In this lab, you created a Log Analytics workspace and enabled diagnostics for the AVD environment by configuring monitoring, deploying diagnostic templates, adding required extensions and identities, and validating that all components are properly connected to Azure Monitor.
 
 Now, click on the **Next** button present in the bottom-right corner of this lab guide.
 
- 
 ![Start Your Azure Journey](./media/Next.png) 

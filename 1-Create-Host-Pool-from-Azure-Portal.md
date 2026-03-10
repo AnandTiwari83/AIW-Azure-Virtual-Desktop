@@ -14,52 +14,6 @@ In this lab, you will complete the following exercise:
 
 - Exercise 1: Create Host Pool using Getting Started Wizard
 
-### Lab prerequisites
-
-Follow the below steps to reset the **<inject key="AzureAdUserEmail" />** user's password to ensure that the user has secure and updated credentials for signing in. This sequence guarantees proper role-based access and account security before starting the lab. **Resetting the password is mandatory for the host pool deployment to succeed**.
-
-1. In the **Azure portal**, search for **Users** **(1)** in the top search bar and select **Users** **(2)** from the results.
-
-   ![ws name.](media/au14d.png)
-
-2. From the list, select the user **ODL_User <inject key="DeploymentID" enableCopy="false"/>** **(1)**.
-
-   ![ws name.](media/au14e.png)
-
-3. Click **Reset password (1)** and then select **Reset password (2)** to generate a new temporary password.
-
-   ![ws name.](media/au14f.png)
-
-4. Copy the newly generated **Temporary password**.
-
-   ![ws name.](media/au14g.png)
-
-5. Open **portal.azure.com** in a private/incognito browser window and sign in using your username: **<inject key="AzureAdUserEmail" />**.
-
-   ![ws name.](media/au14b.png)
-
-6. On the sign-in page, choose **Use your password instead**, enter the temporary password you copied, and click **Sign in**.
-
-   ![ws name.](media/au14c.png)
-
-7. On the **Update your password** page, enter a new password. For this lab, use your **Temporary Access Pass**: **<inject key="AzureAdUserPassword" />**, then click **Sign in**.
-
-   ![ws name.](media/au14h.png)
-
-8. When prompted with **Stay signed in?**, select **No**.
-
-   ![ws name.](media/au14a.png)
-
-9. You will be asked to sign in again. Enter the **Temporary Access Pass**: **<inject key="AzureAdUserPassword" />**.
-
-   ![ws name.](media/au14.png)
-
-10. When the **Stay signed in?** prompt appears again, click **No**.
-
-    ![ws name.](media/au14a.png)
-
-1. Once the **Password reset successfully**, please proceed with the lab.     
-
 ## Exercise 1: Create Host Pool using Getting Started Wizard
 
 In this exercise, you will create an Azure Virtual Desktop (AVD) host pool using the Getting Started Wizard, including setting up session hosts, domain join, and registering the workspace.
@@ -128,6 +82,8 @@ In this exercise, you will create an Azure Virtual Desktop (AVD) host pool using
 
 1. On the **Network and security** section, enter the required information as follow:
 
+   >**Note:** Make sure to select the subnet as **sessionhosts-subnet(10.0.1.0/24)**
+
    - Virtual Network: **aadds-vnet (1)** *(choose from dropdown)*
    - Subnet: **sessionhosts-subnet(10.0.1.0/24) (2)** *(choose from dropdown)*
    - Network security group type: **Basic (3)**
@@ -194,9 +150,7 @@ In this exercise, you will create an Azure Virtual Desktop (AVD) host pool using
 <validation step="97d211ae-121b-445b-a278-054cda35de33" />   
 
 ## Summary
-
 In this lab, you created an Azure Virtual Desktop host pool using the Getting Started Wizard, configured session hosts, joined them to the domain, and registered the environment to a workspace for AVD access.
-
    
 Now, click on the **Next** button present in the bottom-right corner of this lab guide.
    

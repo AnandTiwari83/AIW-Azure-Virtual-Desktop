@@ -174,6 +174,12 @@ While creating the EB-AVD-HP host pool, we selected the load balancing method as
 
       ![ws name.](media/vd6.png)
 
+1. If you see the **Action Required** pop up, click on **Ask later.**
+
+   >**Note:** If there's a dialog box saying ***Stau signed in***, then select the **No** option.
+
+     ![](media/login1.png)
+
      >**Note:** Follow the below steps, if MFA prompted:
 
      - Click **Next** in **Lets keep your account secure**.
@@ -272,6 +278,10 @@ While creating the EB-AVD-HP host pool, we selected the load balancing method as
 
      ![ws name.](media-2/avddesktop.png)
 
+1. Select **Allow** on the prompt asking permission to *Access local resources*.
+
+    ![ws name.](media/lab4-10.png)
+
 1. Enter your **credentials** to access the application and click on **Submit**.
 
    - Username: *Paste the username*  **<inject key="Avd User 02" />** then click on **Next**.
@@ -328,7 +338,7 @@ While creating the EB-AVD-HP host pool, we selected the load balancing method as
 
      ![ws name.](media-2/depth.png)
 
-1. Paste the below-mentioned link in your browser, in the **JumpVM** and enter your **credentials** to log in. 
+1. Paste the below-mentioned link in your **Private browser**, in the **JumpVM** and enter your **credentials** to log in. 
 
    ```
    aka.ms/wvdarmweb 
@@ -345,6 +355,8 @@ While creating the EB-AVD-HP host pool, we selected the load balancing method as
      ![ws name.](media/lab4-1.png)
 
 1. Enter your **credentials** to access the application and click on **Submit**.
+
+    >**Note:** If it’s not connecting, please wait for about 5 minutes and then try opening the Remote app again using a private/incognito browser window. 
 
     - Username: *Paste the username*  **<inject key="Avd User 01" />** then click on **Next**.
 

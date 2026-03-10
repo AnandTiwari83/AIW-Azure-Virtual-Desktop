@@ -27,7 +27,7 @@ In this exercise, you will access the published RemoteApp application by configu
 
 1. Navigate to **GS-AVD-HP**.
 
-1. Then go to **RDP Properties (1)** under ***Settings*** blade. Under the **Device redirection (2)**, select the Clipboard redirection from the drop down as **Clipboard on local computer is available in remote session (3)** and click **Save (4)**.
+1. Then go to **RDP Properties (1)** under ***Settings*** blade. Under the **Device redirection (2)**, for the **Clipboard redirection** select the **Clipboard on local computer is available in remote session (3)** form the drop down and click **Save (4)**.
 
     ![ws name.](media/avd-0704.png)
 

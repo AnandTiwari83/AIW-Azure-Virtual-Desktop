@@ -15,8 +15,6 @@ In this lab, you will complete the following exercises:
 - Exercise 1: Create Log Analytics
 - Exercise 2: Enable diagnostics for Workspace
 
-
-
 ## Exercise 1: Create Log Analytics
 
 In this exercise, you create a Log Analytics workspace by configuring basic settings, reviewing the deployment parameters, and deploying it to support monitoring for your AVD environment.

@@ -50,6 +50,16 @@ In this exercise, you will configure Multimedia Redirection (MMR) for Azure Virt
 
       ![ws name.](media/ch14.png)
 
+1. After the desktop loads, search for **PowerShell (1)**, then right-click **Windows PowerShell (2)** and select **Run as Administrator (3)**.
+
+   ![ws name.](./media/teamsopenn1.png)
+
+1. Enter the command below and press Enter to install and update the Teams application.
+
+   ```
+   winget upgrade --id Microsoft.Teams --silent --accept-package-agreements --accept-source-agreements
+   ```
+
 1. After the desktop has loaded, search for **Teams (1)** and click **Open (2)**, as shown in the screenshot below.
 
    ![ws name.](./media/teamsopenn.png)

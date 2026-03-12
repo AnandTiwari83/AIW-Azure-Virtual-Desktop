@@ -160,6 +160,8 @@ In this task, you will unsubscribe and resubscribe to the AVD workspace using th
    
 1. A window saying *Connecting to: Session Desktop* will appear. Wait for a few seconds, then enter your password to access the Desktop.
 
+   > **Note:** If you are unable to sign in using the provided password, try logging in with the **AzurePassword** available in the **AzureCreds** file on the desktop.
+
    - Password: **<inject key="AzureAdUserPassword" />**
    
    ![ws name.](media/ch14.png)

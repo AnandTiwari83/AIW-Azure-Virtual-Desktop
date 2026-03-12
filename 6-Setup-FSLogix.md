@@ -438,6 +438,8 @@ In this Exercise, we will install and configure FSLogix in the **AVD-HP01-SH-0**
 
 23. Enter your **Credentials** to access the desktop.
 
+    > **Note:** If you are unable to sign in using the provided password, try logging in with the **AzurePassword** available in the **AzureCreds** file on the desktop.
+
     - Username: **<inject key="AzureAdUserEmail" />**
     - Password: **<inject key="AzureAdUserPassword" />**
 

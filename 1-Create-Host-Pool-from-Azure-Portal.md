@@ -18,6 +18,12 @@ In this lab, you will complete the following exercise:
 
 In this exercise, you will create an Azure Virtual Desktop (AVD) host pool using the Getting Started Wizard, including setting up session hosts, domain join, and registering the workspace.
 
+**Important**
+
+**From your VM, open the AzureCreds file and copy the AzurePassword provided in the Notepad. This is the permanent password for the lab. Since Temporary Access Pass (TAP) is being used, you may be required to use this password in certain steps, such as when signing in to the session host or accessing applications like Excel and Word within the session.**
+
+   ![ws name.](media/2avd1at.png)
+
 1. On the **Azure portal,** search for **Azure Virtual Desktop** **(1)** in the search bar and select **Azure Virtual Desktop** **(2)** from the suggestions.
 
    ![ws name.](media/2avd1.png)
@@ -96,14 +102,14 @@ In this exercise, you will create an Azure Virtual Desktop (AVD) host pool using
 
    - Select which directory you would like to join: **Active Directory (1)**
    - AD domain join UPN: **<inject key="AzureAdUserEmail" /> (2)**
-   - Password: *Paste the password* **<inject key="AzureAdUserPassword" /> (3)**
-   - Confirm password: **<inject key="AzureAdUserPassword" /> (4)**
+   - Password: *Paste the password* **Use the password form AzureCreads file (3)**
+   - Confirm password: **Use the password form AzureCreads file (4)**
 
 - **Virtual machine administrator account**
 
    - User name: **odl_user_<inject key="DeploymentID" enableCopy="false"/>(5)**
-   - Password: *Paste the password 2 times* **<inject key="AzureAdUserPassword" /> (6)**
-   - Confirm password: *Paste the password 2 times* **<inject key="AzureAdUserPassword" /> (7)**
+   - Password: *Paste the password 2 times* **<inject key="AzureAdUserPassword" />1234 (6)**
+   - Confirm password: *Paste the password 2 times* **<inject key="AzureAdUserPassword" />1234 (7)**
 
       ![ws name.](media/vd9.png)
 

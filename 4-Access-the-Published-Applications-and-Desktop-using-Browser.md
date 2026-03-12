@@ -67,6 +67,8 @@ In this exercise, you will access the published RemoteApp application by configu
 
 1. Enter the lab credentials to access the application and click on **Submit**.
 
+   > **Note:** If you are unable to sign in using the provided password, try logging in with the **AzurePassword** available in the **AzureCreds** file on the desktop.
+
    - Username: **<inject key="AzureAdUserEmail" />** 
   
    - Password: **<inject key="AzureAdUserPassword" />**
@@ -130,6 +132,8 @@ In this exercise, you will access the published AVD desktop by updating the host
 
 1. Enter the lab credentials to access the application and click on **Submit**.
 
+   > **Note:** If you are unable to sign in using the provided password, try logging in with the **AzurePassword** available in the **AzureCreds** file on the desktop.
+
    - Username: **<inject key="AzureAdUserEmail" />** 
   
    - Password: **<inject key="AzureAdUserPassword" />**
@@ -168,5 +172,4 @@ In this lab, you accessed both the published RemoteApp and the full AVD desktop 
 
 Now, click on the **Next** button present in the bottom-right corner of this lab guide.
 
- 
 ![Start Your Azure Journey](./media/Next.png) 

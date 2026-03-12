@@ -18,7 +18,6 @@ In this lab, you will complete the following exercise:
 
 - Exercise 1: Create a Scaling Plan
 
-
 ## Exercise 1: Create a Scaling Plan
 
 In this exercise, you will create an Azure Virtual Desktop scaling plan by first assigning the necessary custom role to manage autoscaling, then configuring schedules for ramp-up, peak, ramp-down, and off-peak hours, setting load-balancing algorithms, defining host capacity thresholds, and finally assigning the plan to the target host pool to automatically scale session host VMs based on demand.

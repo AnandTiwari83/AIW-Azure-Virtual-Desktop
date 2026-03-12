@@ -378,6 +378,8 @@ While creating the EB-AVD-HP host pool, we selected the load balancing method as
 
 1. Enter your **credentials** to access the application and click on **Submit**.
 
+   > **Note:** If you are unable to sign in using the provided password, try logging in with the **AzurePassword** available in the **AzureCreds** file on the desktop.
+
    - Username: *Paste the username*  **<inject key="Avd User 02" />** *then click on **Next**.*
    - Password: *Paste the* **<inject key="AVD User Password" />** *and click on **OK**.* 
 

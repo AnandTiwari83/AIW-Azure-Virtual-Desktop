@@ -92,6 +92,8 @@ In this exercise, you will install and configure the Remote Desktop client on yo
    
 1. A window saying *Starting your app*, will appear. Wait for a few seconds, then enter your password to access the Application.
 
+   > **Note:** If you are unable to sign in using the provided password, try logging in with the **AzurePassword** available in the **AzureCreds** file on the desktop.
+
     - Password: **<inject key="AzureAdUserPassword" />**
    
       ![ws name.](media/avd-14.png)
@@ -149,6 +151,8 @@ In this exercise, you will access the full AVD Session Desktop by updating the h
    ![ws name.](media/labinst24.png)
    
 1. A window saying *Connecting to: Session Desktop* will appear. Wait for a few seconds, then enter your password to access the Desktop.
+
+   > **Note:** If you are unable to sign in using the provided password, try logging in with the **AzurePassword** available in the **AzureCreds** file on the desktop.
 
    - Password: **<inject key="AzureAdUserPassword" />**
    

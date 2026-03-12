@@ -215,6 +215,8 @@ In this exercise, you will enable and validate Screen Capture Protection for Azu
    ![ws name.](media/ex4t2s2.png)
    
 1. A window saying *Connecting to SessionDesktop* will appear. Wait for a few seconds, then enter your password to access the Desktop.
+   
+   > **Note:** If you are unable to sign in using the provided password, try logging in with the **AzurePassword** available in the **AzureCreds** file on the desktop.
 
    - Password: **<inject key="AzureAdUserPassword" />**
    

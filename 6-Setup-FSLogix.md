@@ -31,9 +31,9 @@ In the exercsie, we will be creating a storage account with a file share which w
 
 3. Use the following configuration for the storage account.
    
-   - Subscription: Leave it to ***default (1)***.
+   - Subscription: Leave it to **default (1)**.
    
-   - Resource Group: *Select **AVD-RG (2)** from the drop-down*. 
+   - Resource Group: Select **AVD-RG (2)** from the drop-down. 
    
    - Storage account name: **<inject key="Storage Account Name" /> (3)**   
       
@@ -49,16 +49,16 @@ In the exercsie, we will be creating a storage account with a file share which w
    
       ![ws name.](media/avdstoargen.png)
    
-4. On the _Advanced_ tab, make sure to enable **Require secure transfer for REST API operations**, **Allow enabling anonymous access on individual containers**, and **Enable storage account key access** options. Once enabled, click on the **Next** button.
+4. On the **Advanced** tab, make sure to enable **Require secure transfer for REST API operations**, **Allow enabling anonymous access on individual containers**, and **Enable storage account key access** options. Once enabled, click on the **Next** button.
 
    ![ws name.](media/lab6-2n.png)
 
-5. In the _Networking_ tab, use the following configurations:
+5. In the **Networking** tab, use the following configurations:
 
    - Public network access: **Enable (1)** 
    - Public network access scope: **Enable from selected virtual networks and IP addresses (2)**
      >**Note:** This will make sure that your storage account is not accessible from the public network, making it more secure.
-   - Virtual network subscription: Leave it to ***default (3)***.
+   - Virtual network subscription: Leave it to **default (3)**.
    - Virtual Network: **aadds-vnet (4)**
    - Subnets: **sessionhosts-subnet (10.0.1.0/24) (5)**
    - Leave the rest to default settings.
@@ -86,9 +86,9 @@ In the exercsie, we will be creating a storage account with a file share which w
      
     ![ws name.](media-2/L6E1S10.png)
     
-    >**Note:** Setting this property implicitly ***domain joins*** the storage account with the associated Azure AD DS deployment. Azure AD DS authentication over SMB is then enabled for all new and existing file shares in the storage account.
+    >**Note:** Setting this property implicitly **domain joins** the storage account with the associated Azure AD DS deployment. Azure AD DS authentication over SMB is then enabled for all new and existing file shares in the storage account.
  
-11. Return to the **<inject key="Storage Account Name" />**  storage account and on the left pane, click on **File shares (1)** present under *Data Storage*, then click on **Refresh (2)** a few times until the status of the Active Directory changes to **Configured (3)** before continuing.
+11. Return to the **<inject key="Storage Account Name" />**  storage account and on the left pane, click on **File shares (1)** present under **Data Storage**, then click on **Refresh (2)** a few times until the status of the Active Directory changes to **Configured (3)** before continuing.
 
     ![ws name.](media-2/avd-48.png)
  
@@ -183,7 +183,7 @@ In this exercise, we will give *Storage File Data SMB Share Contributor* permiss
          ![ws name.](media-1/Ex6-task2-step10note2.png)
         
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-- If you receive a success message, you can proceed to the next task.
+- Scroll down and hit the Validate button in the lab guide for the corresponding task.If you receive a success message, you can proceed to the next task.
 - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
  
@@ -287,11 +287,8 @@ In this Exercise, we will install and configure FSLogix in the **AVD-HP01-SH-0**
    > 
    >iii) Set the profile container location to the Azure file share location we created.
 
-7. In line 2, we have to replace the name of the storage account with the **"NameofStorageAccount"** block.
-
+7. In line 2 in the script, replace **NameofStorageAccount** with **<inject key="Storage Account Name" />** and then click on **Run** to execute the script.
      ![ws name.](media/jvm24.png)
-
-8. In the script, replace **NameofStorageAccount** with **<inject key="Storage Account Name" />** and then click on **Run** to execute the script.
 
 9. Wait for some time for the script to execute. Once done, it will show an output saying **Script Executed successfully**.
 
@@ -381,11 +378,9 @@ In this Exercise, we will install and configure FSLogix in the **AVD-HP01-SH-0**
       > 
       >iii) Set the profile container location to the Azure file share location we created.
 
-13. In line 2, we have to replace the name of the storage account with the **"NameofStorageAccount"** block.
+13. In line 2 in the script, replace **NameofStorageAccount** with **<inject key="Storage Account Name" />** and then click on **Run** to execute the script.
 
     ![ws name.](media/jvm24.png)
-
-14. In the script, replace **NameofStorageAccount** with **<inject key="Storage Account Name" />** and then click on **Run** to execute the script.
        
 15. Wait for some time for the script to execute.  Once done, it will show an output saying **Script Executed successfully**.
 
@@ -393,7 +388,7 @@ In this Exercise, we will install and configure FSLogix in the **AVD-HP01-SH-0**
    
     >**Note:** It will take around five minutes for the script to execute.
   
-16. Now search for *Azure virtual desktop* in the search bar and select **Azure Virtual Desktop** from the suggestions.
+16. Now search for **Azure virtual desktop** in the search bar and select **Azure Virtual Desktop** from the suggestions.
 
     ![ws name.](media/w1.png)
      
@@ -489,14 +484,14 @@ In this exercise, we will be accessing the file share to verify the user profile
 
       ![ws name.](media-1/avd-27.png) 
 
-6. Now you will be able to see the user profile data stored in the filesharers in a ***.vhd*** format.
+6. Now you will be able to see the user profile data stored in the fileshare in a **.vhd** format.
 
       ![ws name.](media-2/userprofile.png)
 
    >**Note:** It might take some time for the User Profile folder to appear in the file share. If you do not see the folder now, continue with the lab and check back later after completing it.
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-- If you receive a success message, you can proceed to the next task.
+- Scroll down and hit the Validate button in the lab guide for the corresponding task. If you receive a success message, you can proceed to the next task.
 - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 <validation step="ad962332-47cc-4a42-899e-29bb55f5a4bd" />

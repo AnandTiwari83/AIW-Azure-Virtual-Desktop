@@ -1,4 +1,4 @@
-# Lab 2(A) : Monitoring using Log Analytics
+# Lab 2: Monitoring using Log Analytics
 
 ### Estimated Duration: 30 Minutes
 
@@ -17,7 +17,7 @@ In this lab, you will complete the following exercises:
 
 ## Exercise 1: Create Log Analytics
 
-In this exercise, you create a Log Analytics workspace by configuring basic settings, reviewing the deployment parameters, and deploying it to support monitoring for your AVD environment.
+In this exercise, you will create a Log Analytics workspace by configuring basic settings, reviewing the deployment parameters, and deploying it to support monitoring for your AVD environment.
 
 1. In the search bar of the Azure portal, type **Log Analytics workspace (1)**. From the search results, select **Log Analytics workspace (2)**.
 
@@ -27,9 +27,9 @@ In this exercise, you create a Log Analytics workspace by configuring basic sett
 
 1. Now add the following configurations:
 
-   - Subscription: Leave it to ***default (1)***
+   - Subscription: Leave it to **default (1)**
   
-   - Resource group: *Select **AVD-Hostpool-RG-avd (2)** from the drop-down.*
+   - Resource group: Select **AVD-Hostpool-RG-avd (2)** from the drop-down.
   
    - Name: **<inject key="Log Analytics Workspace Name	" /> (3)**
   
@@ -49,9 +49,9 @@ In this exercise, you create a Log Analytics workspace by configuring basic sett
 
 ## Exercise 2: Enable diagnostics for Workspace
 
-In this exercise, you enable diagnostics for the AVD workspace by configuring monitoring settings, deploying required templates, adding extensions and identities, and validating that all diagnostic components are correctly applied.
+In this exercise, you will enable diagnostics for the AVD workspace by configuring monitoring settings, deploying required templates, adding extensions and identities, and validating that all diagnostic components are correctly applied.
  
-1. On the **Azure portal** search for **Azure Virtual Desktop (1)** in the search bar and select **Azure Virtual Desktop** **(2)** from the search results.
+1. On the **Azure portal**, search for **Azure Virtual Desktop (1)** in the search bar and select **Azure Virtual Desktop** **(2)** from the search results.
 
    ![ws name.](media/L2AE2S1.png) 
 
@@ -87,11 +87,11 @@ In this exercise, you enable diagnostics for the AVD workspace by configuring mo
 
     ![ws name.](media/L2AE2S6.png)
    
-1. On the **Deploy template** page, the diagnostic settings for the host pool are automated using a template. Look through the categories select and click on **deploy**.
+1. On the **Deploy template** page, the diagnostic settings for the host pool are automated using a template. Look through the categories seleted and click on **deploy**.
 
    ![ws name.](media/avd-5.png)
    
-1. Once the deployment is successful, **Refresh** the **Check Configuration** page. You'll be able to see the settings applied to the host pool.
+1. Once the deployment is successful, **Refresh** the **CheckAMAConfiguration** page. You'll be able to see the settings applied to the host pool.
 
    ![ws name.](media/L2AE2S8.png)
    
@@ -103,17 +103,21 @@ In this exercise, you enable diagnostics for the AVD workspace by configuring mo
 
    ![ws name.](media/lab2-8n.png) 
 
-1. Once the deployment is successful, **Refresh** the **Check Configuration** page 2-3 times as it takes some time to load the details. You'll be able to see the settings applied to the workspace.
+1. Once the deployment is successful, **Refresh** the **CheckAMAConfiguration** page 2-3 times as it takes some time to load the details. You'll be able to see the settings applied to the workspace.
 
    ![ws name.](media/L2AE2S11.png)
    
-1. On **CheckAMAConfiguration** page, Select **Session host data settings (1)**. Then, select the **<inject key="Log Analytics Workspace Name	" /> (2)** analytics workspace as the **Workspace destination**.
+1. On **CheckAMAConfiguration** page, Select **Session host data settings (1)**. Then, select the **<inject key="Log Analytics Workspace Name" enableCopy="false" /> (2)** analytics workspace as the **Workspace destination**.
 
    ![ws name.](media/L2AE2S12.png)
 
 1. Click on the **Create data collection rule**.
 
    ![ws name.](media/L2AE2S12a.png)
+
+1. On the **Deploy template** page, click on **deploy**.
+
+1. Once the deployment is successful, **Refresh** the **CheckAMAConfiguration** page 2-3 times as it takes some time to load the details. You'll be able to see the Data Collection rule has been created.
 
 1. On the **Check AMA Configuration** page, scroll down to the **Session hosts missing Azure Monitor extension** section and then click on **Add extension**.
 
@@ -137,7 +141,7 @@ In this exercise, you enable diagnostics for the AVD workspace by configuring mo
 
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-- If you receive a success message, you can proceed to the next task.
+- Scroll down and hit the Validate button in the lab guide for the corresponding task. If you receive a success message, you can proceed to the next task.
 - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 

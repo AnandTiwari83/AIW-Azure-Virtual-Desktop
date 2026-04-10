@@ -134,7 +134,7 @@ In this task, you will unsubscribe and resubscribe to the AVD workspace using th
 
    ![ws name.](media/137.png)
    
-1. Click on the *ellipses* and select **Unsubscribe**. Click on **Yes** for any warning.
+1. Click on the **ellipses(...)** and select **Unsubscribe**. Click on **Yes** for any warning.
 
    ![ws name.](media/lb16.png)
 
@@ -146,11 +146,11 @@ In this task, you will unsubscribe and resubscribe to the AVD workspace using th
 
 1. Enter the user credentials to access the workspace.
 
-   - Username: *Paste the username*  **<inject key="AzureAdUserEmail" />** *then click on* **Next**.
+   - Username: Paste the username **<inject key="AzureAdUserEmail" />** *then click on* **Next**.
 
      ![ws name.](media/vd55.png)
    
-   - Password: *Paste the password*  **<inject key="AzureAdUserPassword" />** *and click on* **Sign in**.
+   - Password: Paste the password  **<inject key="AzureAdUserPassword" />** *and click on* **Sign in**.
 
       ![ws name.](media/vd6.png)
 
@@ -158,7 +158,7 @@ In this task, you will unsubscribe and resubscribe to the AVD workspace using th
 
    ![ws name.](media/ex4t2s2.png)
    
-1. A window saying *Connecting to: Session Desktop* will appear. Wait for a few seconds, then enter your password to access the Desktop.
+1. A window saying **Connecting to: Session Desktop** will appear. Wait for a few seconds, then enter your password to access the Desktop.
 
    > **Note:** If you are unable to sign in using the provided password, try logging in with the **AzurePassword** available in the **AzureCreds** file on the desktop.
 
@@ -175,7 +175,7 @@ In this task, you will unsubscribe and resubscribe to the AVD workspace using th
    ![](media/vd45.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-- If you receive a success message, you can proceed to the next task.
+- Scroll down and hit the Validate button in the lab guide for the corresponding task. If you receive a success message, you can proceed to the next task.
 - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 

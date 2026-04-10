@@ -32,7 +32,7 @@ In this exercise, you will add new users to Microsoft Entra ID, assign them to t
 
     ![ws name.](media/dev3.png)
 
-1. Click on **Users** under *Manage* blade.
+1. Click on **Users** under **Manage** blade.
 
    ![ws name.](media/avd1.1.png)
 
@@ -44,7 +44,8 @@ In this exercise, you will add new users to Microsoft Entra ID, assign them to t
 
    - User principal name: **AVDUser01 (1)**
    - Display Name: **AVDUser01 (2)**
-   - Click on **Review + Create (3)** and then click on **Create.**
+   - Copy the **Password (3)** and paste it in notepad
+   - Click on **Review + Create (4)** and then click on **Create.**
 
         ![ws name.](media-1/avd-28.png)
 
@@ -52,7 +53,8 @@ In this exercise, you will add new users to Microsoft Entra ID, assign them to t
 
    - User principal name: **AVDUser02 (1)**
    - Display Name: **AVDUser02 (2)**
-   - Click on **Review + Create (3)** and then click on **Create.**
+   - Copy the **Password (3)** and paste it in notepad
+   - Click on **Review + Create (4)** and then click on **Create.**
    
         ![ws name.](media-1/avd-29.png)
 
@@ -68,7 +70,7 @@ In this exercise, you will add new users to Microsoft Entra ID, assign them to t
 
    ![ws name.](media-1/vd25.png)
 
-1. Click on **AVDUser02** to open it. Then click on **Groups** **(1)** and select **+ Add memberships** **(2)**.
+1. Go back to the users. Then click on **AVDUser02** to open it. Then click on **Groups** **(1)** and select **+ Add memberships** **(2)**.
 
    ![ws name.](media-1/avd-32.png)
 
@@ -76,7 +78,11 @@ In this exercise, you will add new users to Microsoft Entra ID, assign them to t
 
    ![ws name.](media-1/vd25.png)
 
-1. Navigate to the *host pool* **GS-AVD-HP** and open **Application groups** present under *Manage* blade. **Two application groups** will be listed there.
+1. Search for **Host pools (1)** in search bar and select **Host pools (2)** from the suggestions.
+
+   ![ws name.](media/avd-9.png)
+
+1. Select **GS-AVD-HP** and open **Application groups** present under **Manage** blade. **Two application groups** will be listed there.
 
     ![ws name.](media-2/Application.png)
 
@@ -86,14 +92,14 @@ In this exercise, you will add new users to Microsoft Entra ID, assign them to t
    
 1. Click on **Assignments(1)** then click on **+ Add (2)**, then in the search bar, type **AVD** and select both **AVDUser01 & AVDUser02 (3)** that we created earlier. At last, click on the **Select (4)** button.
 
-    ![ws name.](media-2/vd26.png)
+    ![ws name.](media-2/vd26-1.png)
 
 1. Once done, the users assigned to the Application group will look similar to the image given below.
 
     ![ws name.](media-2/vd27.png)
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-   - If you receive a success message, you can proceed to the next task.
+   - Scroll down and hit the Validate button in the lab guide for the corresponding task. If you receive a success message, you can proceed to the next task.
    - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
    - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
@@ -101,51 +107,8 @@ In this exercise, you will add new users to Microsoft Entra ID, assign them to t
 
 ## Exercise 2: Update Passwords for the new users
 
-In this exercise, you will use PowerShell to run a script that resets the passwords for the newly created users, ensuring they can log in successfully after registering with Azure AD DS.
+In this exercise, you will update the password for the newly created users in the Microsoft Entra ID.
 
-1. Inside the Jump VM, click on the Windows button look for **PowerShell (1)** and click on **Windows PowerShell (2)**.
-
-   ![ws name](media-2/vd28.png)
-
-2. Run the following command in your terminal to set up your Azure account permissions locally.
-
-   ```
-   Connect-AzureAD
-   ```
-
-3. Your browser window will open and you will be prompted to authenticate to your Azure.
-
-4. Login to Azure with the username **<inject key="AzureAdUserEmail" />** and click on **Next**.
-
-   ![](media/lab7-avd2.png)
-
-5. Enter your password **<inject key="AzureAdUserPassword" />** and click on **Sign in**.
-
-   ![](media/vd6.png)
-
-6. Copy and paste the following script and hit **Enter**.
-
-   ```
-   Get-AzADDomainService
-   $domain = Get-AzADDomainService
-   $domain = $domain.Name
-   $PasswordProfile = @{
-   Password = 'Azure1234567'
-   ForceChangePasswordNextSignIn = $False
-   }
-   $users = @("AVDUser01@$domain","AVDUser02@$domain")
-   $users
-   $users | foreach{
-   Update-AzADUser -UserPrincipalName $_ -PasswordPolicy DisablePasswordExpiration -PasswordProfile $PasswordProfile
-   }
-   ```
- 
-7. The output of the script will be similar to the one shown below. The password for both **AVDUser01** and **AVDUser02** is reset to **Azure1234567**.
-
-    ![ws name.](media/vd30.png)
-    ![ws name.](media/vd29.png)    
-
-   >**Note**: ***Username*** and ***Password*** for ***AVDUser01*** and ***AVDUser02*** is present in Environment Details tab.
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    - If you receive a success message, you can proceed to the next task.
@@ -158,7 +121,7 @@ In this exercise, you will use PowerShell to run a script that resets the passwo
 
 **A**. **Breadth-first**
 
-While creating the EB-AVD-HP host pool, we selected the load balancing method as *Breadth-first*. Now, we are going to log in to the Desktop App created on EB-AVD-HP with both users simultaneously and see the user distribution.
+While creating the GS-AVD-HP host pool, we selected the load balancing method as **Breadth-first**. Now, we are going to log in to the Desktop App created on GS-AVD-HP with both users simultaneously and see the user distribution.
 
 1. Open an **Incognito browser** on the **JumpVM**, paste the provided link, and log in using your **credentials**.
 
@@ -166,17 +129,25 @@ While creating the EB-AVD-HP host pool, we selected the load balancing method as
    aka.ms/wvdarmweb
    ```
 
-   - Username: *Paste the username*  **<inject key="Avd User 01" />** then click on **Next**.
+   - Username: Paste the username  **<inject key="Avd User 01" />** then click on **Next**.
    
       ![ws name.](media/username.png)
 
-   - Password: *Paste the password*  **<inject key="AVD User Password" />** *and click on* **Sign in**.
+   - Password: Paste the password  that copied in task 1 step 4 and click on **Sign in**.
 
       ![ws name.](media/vd6.png)
 
+1. In the **Update your Password page**, provide below details:
+
+   - Current password: Paste the password  that was copied in task 1 step 4 **(1)**.
+   - New password: Paste the password  **<inject key="AVD User Password" /> (2)**
+   - Confirm password: Paste the password  **<inject key="AVD User Password" /> (3)** and click on **Sign in (4)**.
+
+     ![](media/login123.png)
+
 1. If you see the **Action Required** pop up, click on **Ask later.**
 
-   >**Note:** If there's a dialog box saying ***Stau signed in***, then select the **No** option.
+   >**Note:** If there's a dialog box saying **Stay signed in**, then select the **No** option.
 
      ![](media/login1.png)
 
@@ -231,9 +202,9 @@ While creating the EB-AVD-HP host pool, we selected the load balancing method as
 
 1. Enter your **credentials** to access the application and click on **Submit**.
 
-   - Username: *Paste the username*  **<inject key="Avd User 01" />** .
+   - Username: Paste the username **<inject key="Avd User 01" />** .
 
-   - Password: *Paste the password*  **<inject key="AVD User Password" />** *and click on* **Submit**.
+   - Password: Paste the password  **<inject key="AVD User Password" />** and click on **Submit**.
 
       ![ws name.](media/lab4-2.png)
 
@@ -257,16 +228,24 @@ While creating the EB-AVD-HP host pool, we selected the load balancing method as
 
 1. Enter the user credentials to access the workspace.
 
-   - Username: *Paste the username*  **<inject key="Avd User 02" />** *then click on* **Next**.
-   - Password: *Paste the password*  **<inject key="AVD User Password" />** *and click on* **Sign in**.
+   - Username: Paste the username **<inject key="Avd User 02" />** *then click on* **Next**.
+   - Password: Paste the password  that copied in task 1 step 4 and click on **Sign in**.
 
-     ![ws name.](media/password2.png)
+      ![ws name.](media/vd6.png)
+
+1. In the **Update your Password page**, provide below details:
+
+   - Current password: Paste the password  that was copied in task 1 step 4 **(1)**.
+   - New password: Paste the password  **<inject key="AVD User Password" /> (2)**
+   - Confirm password: Paste the password  **<inject key="AVD User Password" /> (3)** and click on **Sign in (4)**.
+
+     ![](media/login123.png)
 
       >**Note**: If MFA prompts, please follow the MFA steps provided.
 
 1. If you see the **Action Required** pop up, click on **Ask later.**
 
-   >**Note:** If there's a dialog box saying ***Stau signed in***, then select the **No** option.
+   >**Note:** If there's a dialog box saying **Stay signed in**, then select the **No** option.
 
    ![](media/login1.png)
 
@@ -294,7 +273,20 @@ While creating the EB-AVD-HP host pool, we selected the load balancing method as
 
      ![ws name.](./media/sessiondesktop1.png) 
 
-1. Return to the Azure portal in your browser inside the **JumpVM**, search for *host pools* and click on **Host pool** from the suggestion to open it.
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   - Scroll down and hit the Validate button in the lab guide for the corresponding task. If you receive a success message, you can proceed to the next task.
+   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+   <validation step="b5b843b1-12f4-483f-b19d-9a50b296c691" />
+
+## Exercise 3: Change and experience Load Balancing methods
+
+**A**. **Breadth-first**
+
+While creating the GS-AVD-HP host pool, we selected the load balancing method as **Breadth-first**. Now, we are going to log in to the Desktop App created on GS-AVD-HP with both users simultaneously and see the user distribution.
+
+1. Return to the Azure portal in your browser inside the **JumpVM**, search for **host pools** and click on **Host pools** from the suggestion to open it.
 
      ![ws name.](media/lb38.png)
 
@@ -314,7 +306,7 @@ While creating the EB-AVD-HP host pool, we selected the load balancing method as
 
       >**Note** Please follow [Breadth-first Load-Balancing Method](https://docs.microsoft.com/en-us/azure/virtual-desktop/host-pool-load-balancing#breadth-first-load-balancing-method) to learn more about it.
 
-1. Open the **AVD-HP01-SH-0....** session host and click on **Users (1)**, you can see the user logged in to that session host. Now select the user **(2)** and click on the **sign out users (3)** button and select **Sign out (4)** to the prompt asking *This will Sign out selected users from session host AVD-HP01-SH-0*.
+1. Open the **AVD-HP01-SH-0....** session host and click on **Users (1)**, you can see the user logged in to that session host. Now select the user **(2)** and click on the **sign out users (3)** button and select **Sign out (4)** to the prompt asking **This will Sign out selected users from session host AVD-HP01-SH-0**.
 
      ![ws name.](media-1/avd-34.png)
 
@@ -322,15 +314,15 @@ While creating the EB-AVD-HP host pool, we selected the load balancing method as
 
      ![ws name.](media-2/avd-35.png)
 
-     >**Note:** We need to log off the users from session hosts so that when users log in again, the connection is made based on the *Depth-first load balancing method*.
+     >**Note:** We need to log off the users from session hosts so that when users log in again, the connection is made based on the **Depth-first load balancing method**.
 
 **B**. **Depth-first**
 
-   Here, we will change the load balancing method of the *EB-AVD-HP* host pool to *Depth-first* and see how user distribution changes in the Host pool.
+   Here, we will change the load balancing method of the **GS-AVD-HP** host pool to *Depth-first* and see how user distribution changes in the Host pool.
 
    >**Note:** If the previous session is closed, visit `aka.ms/wvdarmweb`, then click on *Default Desktop* and log in with *AVDUser01* credentials.
 
-1. In **GS-AVD-HP** host pool, click on **Properties** under *Settings* blade.
+1. In **GS-AVD-HP** host pool, click on **Properties** under **Settings** blade.
 
      ![ws name.](media-2/properties.png)
 
@@ -358,9 +350,9 @@ While creating the EB-AVD-HP host pool, we selected the load balancing method as
 
     >**Note:** If it’s not connecting, please wait for about 5 minutes and then try opening the Remote app again using a private/incognito browser window. 
 
-    - Username: *Paste the username*  **<inject key="Avd User 01" />** then click on **Next**.
+    - Username: Paste the username  **<inject key="Avd User 01" />** then click on **Next**.
 
-    - Password: *Paste the password* **<inject key="AVD User Password" />**.
+    - Password: Paste the password **<inject key="AVD User Password" />**.
 
       ![ws name.](media/lab4-2.png)
 
@@ -389,11 +381,11 @@ While creating the EB-AVD-HP host pool, we selected the load balancing method as
 
      ![ws name.](./media/sessiondesktop1.png) 
 
-1. Return back to the Azure portal in the **JumpVM**, navigate to **GS-AVD-HP** host pool and open **Session Hosts** present under *Manage* blade.
+1. Return back to the Azure portal in the **JumpVM**, navigate to **GS-AVD-HP** host pool and open **Session Hosts** present under ***Manage** blade.
 
      ![ws name.](media-2/avdsession.png)
 
-1. Here one of the session hosts, either *AVD-HP01-SH-0* or *AVD-HP01-SH-1* will have 2 Active sessions. Click on that session host to open it.
+1. Here one of the session hosts, either **AVD-HP01-SH-0** or **AVD-HP01-SH-1** will have 2 Active sessions. Click on that session host to open it.
 
       ![ws name.](media-2/2users.png)
 

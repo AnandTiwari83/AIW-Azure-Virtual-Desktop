@@ -1,4 +1,4 @@
-# Lab 2(B): Monitoring using Azure Monitor for AVD
+# Lab 15: Monitoring using Azure Monitor for AVD
 
 ### Estimated Duration: 20 Minutes
 
@@ -18,7 +18,7 @@ In this task, you will access the Azure Virtual Desktop environment using both t
 
    ![ws name.](media/137.png)
    
-1. Click on the *ellipses* and select **Unsubscribe**. Click on **Continue** for any warning.
+1. Click on the **ellipses(...)** and select **Unsubscribe**. Click on **Continue** for any warning.
 
    ![ws name.](media/lb16.png)
 
@@ -30,17 +30,14 @@ In this task, you will access the Azure Virtual Desktop environment using both t
 
 1. Enter the user credentials to access the workspace.
 
-   - Username: *Paste the username*  **<inject key="Avd User 02" />** *then click on* **Next**.
+   - Username: Paste the username  **<inject key="Avd User 02" />** *then click on* **Next**.
    
-   - Password: *Paste the password*  **<inject key="AVD User Password" />** *and click on* **Sign in**.
+   - Password: Paste the password  **<inject key="AVD User Password" />** and click on **Sign in**.
 
       ![ws name.](media/password2.png)
+       >**Note**: If MFA prompts, please follow the MFA steps provided.
 
-      >**NOTE**: If there's a dialog box saying ***Help us protect your account***, then select the **Skip for now** option.
-
-      ![](media/login2.png)
-    
-1. Make sure to **uncheck** *Allow my organization to manage my device* and click on **No, sign in to this app only** if you are directed to the tab.
+1. Make sure to **uncheck** Allow my organization to manage my device and click on **No, sign in to this app only** if you are directed to the tab.
 
    ![ws name.](media/ex4t1s9.png)
 
@@ -52,8 +49,8 @@ In this task, you will access the Azure Virtual Desktop environment using both t
 
    > **Note:** If you are unable to sign in using the provided password, try logging in with the **AzurePassword** available in the **AzureCreds** file on the desktop.
 
-   - Username: *Paste the username*  **<inject key="Avd User 02" />** then click on **Next**.*
-   - Password: *Paste the* **<inject key="AVD User Password" />** *and click on* **OK**.* 
+   - Username: Paste the username  **<inject key="Avd User 02" />** then click on **Next**.
+   - Password: Paste the password **<inject key="AVD User Password" />** and click on* **OK**.
    
    ![ws name.](media/lb37.png)
   
@@ -74,19 +71,19 @@ In this task, you will use Azure Virtual Desktop Insights to monitor your enviro
 
    ![ws name.](media-2/Lab2(a)-ex2-step2.png)
    
-1. In **Insights** page, **Click** on **Overview** tab *(1)*. Here on the **gs-avd-hp** host pool, you'll be able to monitor the status and health of the session hosts (3).
+1. In **Insights** page, click on **Overview** tab. Here you can see **gs-avd-hp** host pool, Scroll down,you will be able to monitor the connection diagnostics and performance and utilization of the session hosts.
 
    ![ws name.](media-1/new-avd-lab13-18.jpg)
    
-1. **Click** on **Users** *(1)* tab, In **UPN to search for** blank paste **<inject key="Avd User 01" />** *(2)* and wait for the data to load. This tab gives an overview of the user's usage. Scroll down and explore different information loaded.
+1. Click on **Users (1)** tab, In **UPN to search for**, paste **<inject key="Avd User 01" />** **(2)** and wait for the data to load. This tab gives an overview of the user's usage. Scroll down and explore different information loaded.
 
    ![ws name.](media-1/new-avd-lab13-23.jpg)
    
-1. **Click** on the **Utilization** tab, This tab gives information about session summary, core info, and more information about the utilization of resources.
+1. Click on the **Utilization** tab, This tab gives information about session summary, core info, and more information about the utilization of resources.
 
    ![ws name.](media-1/new-avd-lab13-20.jpg)
    
-1. **Click** on **Clients** *(1)* tab, Here you'll be able to monitor the number of users *(2)* connected to AVD using the browser and remote client application.
+1. Click on **Clients** **(1)** tab, Here you'll be able to monitor the number of users **(2)** connected to AVD using the browser and remote client application.
 
    ![ws name.](media-1/new-avd-lab13-22.jpg)
    

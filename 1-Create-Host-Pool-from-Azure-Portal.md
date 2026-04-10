@@ -20,7 +20,7 @@ In this exercise, you will create an Azure Virtual Desktop (AVD) host pool using
 
 **Important**
 
-**From your VM, open the AzureCreds file and copy the AzurePassword provided in the Notepad. This is the permanent password for the lab. Since Temporary Access Pass (TAP) is being used, you may be required to use this password in certain steps, such as when signing in to the session host or accessing applications like Excel and Word within the session.**
+**From your LabVM Desktop, open the AzureCreds file and copy the AzurePassword provided in the Notepad. This is the permanent password for the lab. Since Temporary Access Pass (TAP) is being used, you may be required to use this password in certain steps, such as when signing in to the session host or accessing applications like Excel and Word within the session.**
 
    ![ws name.](media/2avd1at.png)
 
@@ -37,7 +37,7 @@ In this exercise, you will create an Azure Virtual Desktop (AVD) host pool using
    **A. Project Details:**
 
    - Subscription: **Leave it as default (1)**
-   - Resource Group: Select ***AVD-HostPool-RG-avd (2)***
+   - Resource Group: Select **AVD-HostPool-RG-avd (2)**
    - Host pool name: **GS-AVD-HP (3)**
    - Location: Select **<inject key="Region" enableCopy="false"/> (4)** from the drop-down list.
    - Preferred app group type: **Desktop (5)**
@@ -56,7 +56,7 @@ In this exercise, you will create an Azure Virtual Desktop (AVD) host pool using
 1. On the **Session hosts** section, enter the required information as follow:
 
    - Add virtual machines: **Yes (1)**
-   - Resource Group: ***AVD-HostPool-RG-avd (2)***
+   - Resource Group: **AVD-HostPool-RG-avd (2)**
    - Name prefix: **AVD-HP01-SH (3)**
    - Virtual machine type: **Azure virtual machine (4)**
    - Virtual machine location: Select **<inject key="Region" enableCopy="false"/> (5)** from the drop-down list.
@@ -74,7 +74,7 @@ In this exercise, you will create an Azure Virtual Desktop (AVD) host pool using
    ![ws name.](media/projdetaild.png)
    ![ws name.](media/projdetaile.png)
 
-1. Virtual machine size: **Standard D4s v4**. *Click on **Change Size**, then select **D4s_v4** and click on **Select** as shown below*
+1. Virtual machine size: **Standard D4s v4**. Click on **Change Size**, then select **D4s_v4** and click on **Select** as shown below.
 
    ![ws name.](media/2avd18.png)
 
@@ -102,14 +102,14 @@ In this exercise, you will create an Azure Virtual Desktop (AVD) host pool using
 
    - Select which directory you would like to join: **Active Directory (1)**
    - AD domain join UPN: **<inject key="AzureAdUserEmail" /> (2)**
-   - Password: *Paste the password* **Use the password form AzureCreads file (3)**
+   - Password: **Use the password form AzureCreads file (3)**
    - Confirm password: **Use the password form AzureCreads file (4)**
 
 - **Virtual machine administrator account**
 
    - User name: **odl_user_<inject key="DeploymentID" enableCopy="false"/>(5)**
-   - Password: *Paste the password 2 times* **<inject key="AzureAdUserPassword" />1234 (6)**
-   - Confirm password: *Paste the password 2 times* **<inject key="AzureAdUserPassword" />1234 (7)**
+   - Password: **<inject key="AzureAdUserPassword" enableCopy="false"/>1234 (6)**
+   - Confirm password: **<inject key="AzureAdUserPassword" enableCopy="false"/>1234 (7)**
 
       ![ws name.](media/vd9.png)
 
@@ -149,7 +149,7 @@ In this exercise, you will create an Azure Virtual Desktop (AVD) host pool using
       ![ws name.](media/L1E1S19.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-- If you receive a success message, you can proceed to the next task.
+- Scroll down and hit the Validate button in the lab guide for the corresponding task. If you receive a success message, you can proceed to the next task.
 - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 

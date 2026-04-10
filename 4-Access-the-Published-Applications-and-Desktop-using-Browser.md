@@ -27,11 +27,11 @@ In this exercise, you will access the published RemoteApp application by configu
 
 1. Navigate to **GS-AVD-HP**.
 
-1. Then go to **RDP Properties (1)** under ***Settings*** blade. Under the **Device redirection (2)**, for the **Clipboard redirection** select the **Clipboard on local computer is available in remote session (3)** form the drop down and click **Save (4)**.
+1. Then go to **RDP Properties (1)** under **Settings** blade. Under the **Device redirection (2)**, for the **Clipboard redirection** select the **Clipboard on local computer is available in remote session (3)** form the drop down and click **Save (4)**.
 
     ![ws name.](media/avd-0704.png)
 
-1. Navigate to **GS-AVD-HP**, then go to **Properties (1)** under ***Settings*** blade. Under the **Preferred app group type**, choose **RemoteApp (2)** and click **Save (3)**.
+1. Navigate to **GS-AVD-HP**, then go to **Properties (1)** under **Settings** blade. Under the **Preferred app group type**, choose **RemoteApp (2)** and click **Save (3)**.
 
     ![ws name.](media/avd-39.png)
 
@@ -45,23 +45,19 @@ In this exercise, you will access the published RemoteApp application by configu
 
 1. To login, enter the lab credentials below:
 
-   - Username: *Paste your username* **<inject key="AzureAdUserEmail" />** *and then click on **Next**.*
+   - Username: Paste your username **<inject key="AzureAdUserEmail" />** and then click on **Next**.
    
       ![ws name.](media/avd-41.png)
 
-   - Temporary Access Pass: *Paste the password* **<inject key="AzureAdUserPassword" />** *and click on **Sign in**.*
+   - Temporary Access Pass: Paste the password **<inject key="AzureAdUserPassword" />** and click on **Sign in**.
 
       ![ws name.](media/vd6.png)
-
-      >**Note:** If there's a dialog box saying ***Help us protect your account***, then select the **Skip for now** option.
-
-      ![](media/skipfornow.png)
 
 1. The AVD dashboard will launch. Click on **Word** to access it.  
 
    ![ws name.](media/word.png)
 
-1. Select **Allow** on the prompt asking permission to *Access local resources*.
+1. Select **Allow** on the prompt asking permission to **Access local resources**.
 
    ![ws name.](media/lab4-10.png)
 
@@ -84,7 +80,7 @@ In this exercise, you will access the published RemoteApp application by configu
    > - Select the two AVD VMs and then click on the **RESTART** button from the top ribbon menu.
    > - After a minute or two; once the AVD Session host VMs are restarted; try the step again.
 
-1. Enter username **<inject key="AzureAdUserEmail" />** on *Activate Office* window and click on **Next**.
+1. Enter username **<inject key="AzureAdUserEmail" />** on **Activate Office window** and click on **Next**.
 
    ![ws name.](media/avd-43.png)
 
@@ -96,11 +92,7 @@ In this exercise, you will access the published RemoteApp application by configu
 
    ![ws name.](media/vd6.png)
 
-   >**Note:** If there's a dialog box saying ***Help us protect your account***, then select the **Skip for now** option.
- 
-   ![](media/skipfornow.png)
-
-1. Click on the **Close** button on the window asking *Your privacy option*.
+1. Click on the **Close** button on the window asking **Your privacy option**.
 
    ![ws name.](media/ch19.png)
 
@@ -126,7 +118,7 @@ In this exercise, you will access the published AVD desktop by updating the host
 
    ![ws name.](media/session.png)
 
-1. Select **Allow** on the prompt asking permission to *Access local resources*.
+1. Select **Allow** on the prompt asking permission to **Access local resources**.
 
    ![ws name.](media/lab4-10.png)
 
@@ -150,7 +142,7 @@ In this exercise, you will access the published AVD desktop by updating the host
 
    ![ws name.](media/w1.png)
 
-1. Click on **Users (1)** under *Manage* blade, then paste **<inject key="AzureAdUserEmail" /> (2)** in the search bar and click on your user to open it **(3).**
+1. Click on **Users (1)** under **Manage** blade, then paste **<inject key="AzureAdUserEmail" /> (2)** in the search bar and click on your user to open it **(3).**
 
     ![ws name.](media/avd-12.png)
 
@@ -158,11 +150,11 @@ In this exercise, you will access the published AVD desktop by updating the host
 
     ![ws name.](media-2/avd-10.png)
 
-1. Click on **OK** to *Sign out user from VMs*.
+1. Click on **OK** to **Sign out user from VMs**.
 
     ![ws name.](media/avd-11.png)
 
-1. Click on the **Refresh** button and make sure no results are displayed under the Host pool.
+1. Click on the **Refresh** button and make sure **no results** are displayed under the Host pool.
 
    ![ws name.](media-1/avd-45.png)
 

@@ -113,7 +113,7 @@ In this exercise, you will create an Azure Virtual Desktop scaling plan by first
 
     ![ws name.](media/w1.png)
    
-20. On the **Azure Virtual Desktop** page, click on **Scaling plans (1)** under *Manage* blade and select **Create (2)**.
+20. On the **Azure Virtual Desktop** page, click on **Scaling plans (1)** under **Manage** blade and select **Create (2)**.
 
     ![](./media/lab8-20.png)
    
@@ -122,7 +122,7 @@ In this exercise, you will create an Azure Virtual Desktop scaling plan by first
     - Subscription: Leave it to **default (1)**
     - Resource group: Select **AVD-HostPool-RG-avd (2)**
     - Scaling plan name: Enter **AVD-SP-01 (3)**
-    - Location: Select **<inject key="Region" />** from the drop-down list **(4)**
+    - Location: Select **<inject key="Region" enableCopy="false" />** from the drop-down list **(4)**
     - Friendly name: Enter **AVD-SP-01 (5)**
     - Time zone: Select your **Time Zone (6)**
     - Host pool type: **Pooled (7)**
@@ -206,12 +206,13 @@ In this exercise, you will create an Azure Virtual Desktop scaling plan by first
       >
       >Here, you will learn about the scaling tool built with the Azure Automation account and Azure Logic App that automatically scales session host VMs in your Azure Virtual Desktop environment. 
       >
-      >Please follow the link given below to learn more about this feature. 
-      >
-      >```https://docs.microsoft.com/en-us/azure/virtual-desktop/set-up-scaling-script```
+      > Please follow the link given below to learn more about this feature. 
+      ```
+      https://docs.microsoft.com/en-us/azure/virtual-desktop/set-up-scaling-script
+      ```
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-- If you receive a success message, you can proceed to the next task.
+- Scroll down and hit the Validate button in the lab guide for the corresponding task. If you receive a success message, you can proceed to the next task.
 - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 

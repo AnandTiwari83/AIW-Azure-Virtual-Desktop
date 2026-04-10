@@ -136,19 +136,19 @@ In this task, you will download the pre-created rule sets into the session host 
   
 1. Enter your **credentials** to access the workspace.
 
-   - Username: *Paste your username* **<inject key="AzureAdUserEmail" />** *and then click on **Next**.*
+   - Username: Paste the username **<inject key="AzureAdUserEmail" />** and then click on **Next**.
    
      ![ws name.](media/95.png)
 
-   - Password: *Paste the password* **<inject key="AzureAdUserPassword" />** *and click on **Sign in**.*
+   - Password: Paste the password **<inject key="AzureAdUserPassword" />** and click on **Sign in**.
 
      ![ws name.](media/96.png)
    
-   >**Note:** If there's a dialog box saying ***Stau signed in***, then select the **No** option.
+   >**Note:** If there's a dialog box saying **Stay signed in**, then select the **No** option.
 
    ![](media/login1.png)
 
-1. Make sure to **uncheck** *Allow my organization to manage my device* and click on **No, sign in to this app only**.
+1. Make sure to **uncheck** Allow my organization to manage my device and click on **No, sign in to this app only**.
 
    ![ws name.](media/ex4t1s9.png)
       
@@ -156,13 +156,13 @@ In this task, you will download the pre-created rule sets into the session host 
 
    ![](media-1/new-avd-lab13-9.jpg)
    
-1. A window saying *Connecting to: Session Desktop* will appear. Wait for a few seconds, then enter your password to access the Desktop.
+1. A window saying **Connecting to: Session Desktop** will appear. Wait for a few seconds, then enter your password to access the Desktop.
 
    - Password: **<inject key="AzureAdUserPassword" />**
    
    ![ws name.](media/ch14.png)
    
-   >**Note:** If there's a dialog box saying ***Stau signed in***, then select the **No** option.
+   >**Note:** If there's a dialog box saying **Stay signed in**, then select the **No** option.
 
    ![](media/login1.png)
 
@@ -204,15 +204,15 @@ In this task, you will download the pre-created rule sets into the session host 
    aka.ms/wvdarmweb
    ```
 
-   - Username: *Enter the username*  **<inject key="Avd User 01" />** then click on **Next**.
+   - Username: Enter the username  **<inject key="Avd User 01" />** then click on **Next**.
    
       ![ws name.](media/username.png)
 
-   - Password: *Paste the password*  **<inject key="AVD User Password" />** *and click on* **Sign in**.
+   - Password: Paste the password  **<inject key="AVD User Password" />** *and click on* **Sign in**.
 
       ![ws name.](media/password.png)
 
-      >**Note:** If there's a dialog box saying ***Stau signed in***, then select the **No** option.
+      >**Note:** If there's a dialog box saying **Stay signed in**, then select the **No** option.
 
       ![](media/login1.png)
 
@@ -226,9 +226,9 @@ In this task, you will download the pre-created rule sets into the session host 
 
 1. Enter your **credentials** to access the application and click on **Submit**.
 
-   - Username: *Paste the username*  **<inject key="Avd User 01" />** then click on **Next**.
+   - Username: Paste the username  **<inject key="Avd User 01" />** then click on **Next**.
    
-   - Password: *Paste the password*  **<inject key="AVD User Password" />** *and click on* **Submit**.
+   - Password: Paste the password  **<inject key="AVD User Password" />** *and click on* **Submit**.
    
       ![ws name.](media/lb52.png)
      

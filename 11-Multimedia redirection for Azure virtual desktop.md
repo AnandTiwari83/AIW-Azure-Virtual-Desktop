@@ -57,7 +57,7 @@ In this exercise, you will configure Multimedia Redirection (MMR) for Azure Virt
 1. Enter the command below and press Enter to install and update the Teams application.
 
    ```
-   winget upgrade --id Microsoft.Teams --silent --accept-package-agreements --accept-source-agreements
+   winget upgrade --id Microsoft.Teams --source winget --silent --accept-package-agreements --accept-source-agreements
    ```
 
 1. After the desktop has loaded, search for **Teams (1)** and click **Open (2)**, as shown in the screenshot below.
@@ -72,7 +72,9 @@ In this exercise, you will configure Multimedia Redirection (MMR) for Azure Virt
 
    ![ws name.](media/vd6.png)
    >**Note:** After you log in to Microsoft Teams, if a pop-up appears showing “What’s New in Teams”, click on “Continue” and then select “Got it” to proceed.
-   
+
+   >**Note:** If you get **Let Microsoft Teams VDI Optimiser access your camera or microphone** pop ups, click on **Yes**
+
 1. After the Teams application is launched, click on the **three dots** **(1)** then, click on **Settings** **(2)**.
 
    ![ws name.](media/avdv215n.png)

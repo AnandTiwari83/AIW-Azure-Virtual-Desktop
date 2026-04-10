@@ -82,15 +82,15 @@ In this exercise, you will create and configure a Conditional Access policy by d
    
    ![](media/savd3.jpg)
 
-5. From the left-hand side blade, click on **Security** under Manage.
+5. From the left-hand side blade, click on **Security** under Manage blade.
 
    ![](media-1/avd1.3.png)
   
-6. In **Security** page select **Conditional Access** under Protect.
+6. In **Security** page, select **Conditional Access** under Protect blade.
 
    ![](media/avdv23.png)
   
-7. In the Overview page click on **Create New Policy**.
+7. In the Overview page, click on **+ Create New Policy**.
 
    ![](media-1/avdpol1.png)
 
@@ -98,7 +98,7 @@ In this exercise, you will create and configure a Conditional Access policy by d
 
    - Name: **AVD-MFA** **(1)**
    - **Assignments**:
-     - Click on **0 users or agents selected** **(2)** under Users option.
+     - Click on **0 users or agents(Preview) selected** **(2)** under Users or agents (Preview) option.
      - A new window will slide in, click on **Select users and Groups** **(3)** and then select the check box saying **Users and groups** **(4)**
      - Now a *Select* window will open, here search for ODL user **<inject key="AzureAdUserEmail" />** then select it and then click on **Select** **(5)** button.
    
@@ -122,8 +122,8 @@ In this exercise, you will create and configure a Conditional Access policy by d
          ![](media-1/vd48.png)
   
       - Click on **0 controls selected (1)** of `Grant` Section under the Access Control option.
-      - Click on **Grant**
-      - Select the Check Box saying **Require multi-factor authentication** **(2)** 
+      - in the **Grant** pane, click on **Grant access**
+      - Select the check Box saying **Require multi-factor authentication** **(2)** 
       - Then click on **Select** **(3)**
 
          ![](media-1/EX10-task2-step7d.png)
@@ -142,11 +142,11 @@ In this exercise, you will create and configure a Conditional Access policy by d
 
 10. Now to log in, enter the lab credentials as mentioned below:
 
-      - Username: *Paste your username* **<inject key="AzureAdUserEmail" />** *and then click on **Next**.*
+      - Username: Paste the username **<inject key="AzureAdUserEmail" />** *and then click on **Next**.*
    
          ![ws name.](media/vd55.png)
 
-      - Password: *Paste the password* **<inject key="AzureAdUserPassword" />** *and click on **Sign in**.*
+      - Password: Paste the password **<inject key="AzureAdUserPassword" />** and click on **Sign in**.
 
          ![ws name.](media/vd6.png)
    
@@ -186,7 +186,7 @@ In this exercise, you will enable and validate Screen Capture Protection for Azu
 
    ![ws name.](media/137.png)
    
-1. Click on the *ellipsis* and select **Unsubscribe**. Click on **Yes** if prompted.
+1. Click on the **ellipsis (...)** and select **Unsubscribe**. Click on **Yes** if prompted.
 
     ![ws name.](media/lb16.png)
 
@@ -196,17 +196,19 @@ In this exercise, you will enable and validate Screen Capture Protection for Azu
 
 1. Enter the user credentials to access the workspace.
 
-    - Username: *Paste your username* **<inject key="AzureAdUserEmail" />** *and then click on **Next**.*
+     >**Note**: If there is already an account signed in on your PC, click on + Use another account to authenticate using the user provided below.
+
+    - Username: Paste the username **<inject key="AzureAdUserEmail" />** and then click on **Next**.
    
       ![ws name.](media/vd55.png)
 
-    - Password: *Paste the password* **<inject key="AzureAdUserPassword" />** *and click on **Sign in**.*
+    - Password: Paste the password **<inject key="AzureAdUserPassword" />** and click on **Sign in**.
 
       ![ws name.](media/vd6.png)
       
       >**Note:** Once you enter the credentials, if there is an authentication request sent to the registered device, **Approve** it using the **Microsoft Authenticator App**
 
-1. If you get a page saying *Allow my organization to manage my device*, make sure to **uncheck** and click on **No, sign in to this app only**.
+1. If you get a page saying **Allow my organization to manage my device**, make sure to **uncheck** and click on **No, sign in to this app only**.
 
    ![ws name.](media/ex4t1s9.png)
    
@@ -214,7 +216,7 @@ In this exercise, you will enable and validate Screen Capture Protection for Azu
 
    ![ws name.](media/ex4t2s2.png)
    
-1. A window saying *Connecting to SessionDesktop* will appear. Wait for a few seconds, then enter your password to access the Desktop.
+1. A window saying **Connecting to SessionDesktop** will appear. Wait for a few seconds, then enter your password to access the Desktop.
    
    > **Note:** If you are unable to sign in using the provided password, try logging in with the **AzurePassword** available in the **AzureCreds** file on the desktop.
 
@@ -222,7 +224,7 @@ In this exercise, you will enable and validate Screen Capture Protection for Azu
    
       ![ws name.](media/ch14.png)
    
-      >**Note:** If there's a dialog box saying ***Stay signed in***, then select the **No** option.
+      >**Note:** If there's a dialog box saying **Stay signed in**, then select the **No** option.
 
       ![](media/login1.png)
 
@@ -246,7 +248,7 @@ In this exercise, you will enable and validate Screen Capture Protection for Azu
 
    ![](./media/vd49.png)
  
-1. Double-click on **AVDGPTemplate** Cabinet file to see the zip file) and extract the **AVDGPTemplate** zip file to the default path.
+1. Double-click on **AVDGPTemplate** Cabinet file to see the zip file and then right click on the Zip file and select **Extract** to extract the **AVDGPTemplate** zip file to the default path.
 
    ![](./media/vd50.png)
    
@@ -256,11 +258,11 @@ In this exercise, you will enable and validate Screen Capture Protection for Azu
 
    ![](./media/extractall1.png)
    
-1. In the Select a Destination and Extract file pane, select **Exract**.
+1. In the Select a Destination and Extract file pane, select **Extract**.
 
    ![](./media/vd51.png)
 
-1. Navigate to the path **C:\Users\ODL_UserDID\Documents\AVDGPTemplate**, please replace `DID` in **ODL_UserDID** with **<inject key="DeploymentID" enableCopy="false"/>** and copy the **terminalserver-avd.admx** file to **C:\Windows\PolicyDefinitions** folder. 
+1. Navigate to the path **C:\Users\ODL_UserDID\Documents\AVDGPTemplate**, please replace **DID** in **ODL_UserDID** with **<inject key="DeploymentID" enableCopy="false"/>** and copy the **terminalserver-avd.admx** file to **C:\Windows\PolicyDefinitions** folder. 
 
    ![](media/admix1.png)
 
@@ -270,7 +272,7 @@ In this exercise, you will enable and validate Screen Capture Protection for Azu
 
    ![](./media/continue.png)
    
-1. Navigate back to the path **C:\Users\ODL_UserDID\Documents\AVDGPTemplate\en-us**, please replace `DID` in **ODL_UserDID** with **<inject key="DeploymentID" enableCopy="false"/>** and copy **terminalserver-avd.adml** file to **C:\Windows\PolicyDefinitions\en-us** folder.
+1. Navigate back to the path **C:\Users\ODL_UserDID\Documents\AVDGPTemplate\en-us**, please replace **DID** in **ODL_UserDID** with **<inject key="DeploymentID" enableCopy="false"/>** and copy **terminalserver-avd.adml** file to **C:\Windows\PolicyDefinitions\en-us** folder.
 
    ![](media/adml1.png)
 
@@ -279,6 +281,7 @@ In this exercise, you will enable and validate Screen Capture Protection for Azu
    >**Note**: If you get any pop-out stating that the **Destination Folder Access Denied**, click on **Continue**.
 
    ![](./media/continue.png)
+   >**Note**: Ensure **.admx** files are placed in the **PolicyDefinitions** folder and corresponding **.adml** files in the appropriate language subfolder **(en-US)**. Incorrect placement may cause policy errors.
    
 1. From the Start menu of your Session Desktop, search for **group policy** and select **Edit group policy**.
 
@@ -365,6 +368,7 @@ In this exercise, you will enable and validate App Locker within the session hos
 1. On the **Services** tab, right click on **Application Identity (1)** and click on **Start (2)**.
 
    ![](./media/applicationidentity.png)
+   >**Note**: If the service is already running, ignore this step and continue with next step
    
 1. Minimize the Services window and search for **Local Security Policy (1)** from Start menu and select it from search results **(2)**.
 
@@ -390,7 +394,7 @@ In this exercise, you will enable and validate App Locker within the session hos
 
       ![](media-1/BYB.png)
       
-    - On **Permissions (1)** tab, click on **Deny (2)** under Action and select **Next (3)**.
+    - On **Permissions** tab, click on **Deny (1)** under Action and select **Next (2)**.
 
       ![](media-1/deny1.png)
       

@@ -4,7 +4,7 @@
 
 ## Lab Scenario
 
-Contoso wants to restrict access to the applications used by different teams in the organization. With Azure Virtual Desktop, admins can create unique application groups for users that require access to a specific set of applications. In this lab, you’ll help Contoso to configure and create an application group and add applications to it.
+Contoso wants to restrict access to the applications used by different teams in the organization. With Azure Virtual Desktop, admins can create unique application groups for users that require access to a specific set of applications. In this lab, you will help Contoso to configure and create an application group and add applications to it.
 
 
 As explained in the General Hierarchy section, an Application Group is a logical grouping of applications installed on session hosts in the host pool. There are two types of application groups: 
@@ -22,7 +22,7 @@ In this lab, you will complete the following exercise:
 
 An application group of type ‘Desktop’, was created automatically while creating the Session Host in the previous exercise. 
 
-In this exercsie, we will create a new application group of type ‘*RemoteApp*’ and publish two applications in it. Also, we will assign users to both application groups.
+In this exercsie, you will create a new application group of type "RemoteApp" and publish two applications in it. Also, we will assign users to both application groups.
 
 1. Navigate to the Azure portal, Search for **Azure Virtual Desktop** in the search bar and select **Azure Virtual Desktop** from the search results.
 
@@ -44,7 +44,7 @@ In this exercsie, we will create a new application group of type ‘*RemoteApp*�
 
    ![ws name.](media-2/assignments.png)   
  
-1. Now in the search bar, copy and paste your **username: <inject key="AzureAdUserEmail" /> (1)**. Then under the search bar, click on your **username: <inject key="AzureAdUserEmail" />(2)** to select it then click on the **Select(3)** button.
+1. Now in the search bar, copy and paste your **username: <inject key="AzureAdUserEmail" /> (1)**. Then under the search bar, click on your **username: <inject key="AzureAdUserEmail" enableCopy="false"/>(2)** to select it then click on the **Select(3)** button.
 
    ![ws name.](media/lab3-1.png)
    
@@ -108,15 +108,15 @@ In this exercsie, we will create a new application group of type ‘*RemoteApp*�
 
    ![ws name.](media/ag3.png)
 
-1. Click on the **+Add Microsoft Entra users or user groups (1)**, then copy and paste your username **<inject key="AzureAdUserEmail" />** **(2)** in the search bar. When your username appears under the search bar, select it, and then click on the **Select (3)** button. This will give you access to the application group.
+1. Click on the **+Add Microsoft Entra users or user groups (1)**, then copy and paste your username **<inject key="AzureAdUserEmail" />** **(2)** in the search bar. When your username appears under the search bar, click on the  **username (3)**, and then click on the **Select (4)** button. This will give you access to the application group.
  
-   ![ws name.](media/L3-E1-S16a.png)
+   ![ws name.](media/L3-E1-S16a-1.png)
 
 1. Click on **Next: Workspace >**.
 
    ![ws name.](media/ag6.png)
 
-1. On the *Workspace* tab, choose the parameters as mentioned below:  
+1. On the **Workspace** tab, choose the parameters as mentioned below:  
 
     - Register application Group: **Yes**
     - Register application Group: Leave the value to default
@@ -139,7 +139,7 @@ In this exercsie, we will create a new application group of type ‘*RemoteApp*�
    ![ws name.](media/uiupdate04.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-- If you receive a success message, you can proceed to the next task.
+- Scroll down and hit the Validate button in the lab guide for the corresponding task. If you receive a success message, you can proceed to the next task.
 - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 

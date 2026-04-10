@@ -61,12 +61,12 @@ In this exercise, you will install and configure the Remote Desktop client on yo
    ![ws name.](media/a49.png)
   
 1. Enter your **credentials** to access the workspace.
-     >Note: If there is already an account signed in on your PC, click on + Use another account to authenticate using the user provided below.
-   - Username: *Paste your username* **<inject key="AzureAdUserEmail" />** *and then click on **Next**.*
+     >**Note**: If there is already an account signed in on your PC, click on + Use another account to authenticate using the user provided below.
+   - Username: Paste your username **<inject key="AzureAdUserEmail" />** and then click on **Next**.
    
       ![ws name.](media/avd-41.png)
 
-   - Password: *Paste the password* **<inject key="AzureAdUserPassword" />** *and click on **Sign in**.*
+   - Password: Paste the password **<inject key="AzureAdUserPassword" />** and click on **Sign in**.
 
       ![ws name.](media/vd6.png)
    
@@ -82,7 +82,7 @@ In this exercise, you will install and configure the Remote Desktop client on yo
 
    ![ws name.](media/avd-39.png)
 
-1. Return to your **PC Remote Desktop application**, click on the three vertical dots **(...) (1)**, and then select **Refresh (2)**.
+1. Return to your **PC Remote Desktop application**, click on the three dots **(...) (1)**, and then select **Refresh (2)**.
 
    ![ws name.](media/avd-13.png)
       
@@ -108,7 +108,7 @@ In this exercise, you will install and configure the Remote Desktop client on yo
 
    ![ws name.](media/vd12.png) 
     
-1. You can exit from the window of the Excel Application by clicking on **X *i.e., the close button***.
+1. You can exit from the window of the Excel Application by clicking on **X i.e., the close button**.
 
    ![ws name.](media/vd13.png)
 
@@ -116,7 +116,7 @@ In this exercise, you will install and configure the Remote Desktop client on yo
 
    ![ws name.](media/w1.png)
 
-1. Click on **User (1)** under *Manage* blade, then paste **<inject key="AzureAdUserEmail" /> (2)** in the search bar and click on your user to open it **(3).**
+1. Click on **User (1)** under **Manage** blade, then paste **<inject key="AzureAdUserEmail" /> (2)** in the search bar and click on your user to open it **(3).**
 
    ![ws name.](media/avd-12.png)
 
@@ -124,11 +124,11 @@ In this exercise, you will install and configure the Remote Desktop client on yo
 
     ![ws name.](media-1/avd-47.png)
 
-1. Click on **OK** to *Sign out user from VMs*.
+1. Click on **OK** to **Sign out user from VMs**.
 
    ![ws name.](media/avd-16.png)
 
-1. Click on the **Refresh** button and make sure *No results* is displayed under Host pool.
+1. Click on the **Refresh** button and make sure **No results** is displayed under Host pool.
 
    ![ws name.](media-1/avd-46.png)
    
@@ -136,7 +136,7 @@ In this exercise, you will install and configure the Remote Desktop client on yo
 
 In this exercise, you will access the full AVD Session Desktop by updating the host pool settings, refreshing the Remote Desktop client, launching the virtual desktop, signing in with your credentials, and verifying successful desktop access.
 
-1. Navigate to Azure portal, then search for *Host pools (1)* in search bar and select **Host pools (2)** from the suggestions.
+1. Navigate to Azure portal, then search for **Host pools (1)** in search bar and select **Host pools (2)** from the suggestions.
 
    ![ws name.](media/avd-9.png)
 
@@ -144,7 +144,7 @@ In this exercise, you will access the full AVD Session Desktop by updating the h
 
     ![ws name.](media/avd-9na.png)
 
-1. Return to WVD client application then click on three vertical dot then select **Refresh**.
+1. Return to WVD client application then click on the three dots **(...) (1)**, and then select **Refresh (2)**.
 
 1. Return to AVD client application. On the AVD dashboard, click on the tile named **Session Desktop** to launch the desktop.
 
@@ -166,7 +166,7 @@ In this exercise, you will access the full AVD Session Desktop by updating the h
 
    ![ws name.](media/ex4t2s4.png)
 
-1. Your virtual desktop will launch and look similar to the screenshot below. You can exit from the window by clicking on **X *i.e., the close button***. 
+1. Your virtual desktop will launch and look similar to the screenshot below. You can exit from the window by clicking on **X i.e., the close button**. 
         
    ![ws name.](./media/sessiondesktop1.1.png) 
 

@@ -44,11 +44,11 @@ In this exercise, you will configure Multimedia Redirection (MMR) for Azure Virt
 
    ![ws name.](media/ex4t2s2.png)
    
-1. A window saying *Starting your app*, will appear. Wait for a few seconds, then enter your password to access the Application.
+1. A window saying **Starting your app*, will appear. Wait for a few seconds, then enter your password to access the Application.
 
     - Password: **<inject key="AzureAdUserPassword" />**
 
-      ![ws name.](media/ch14.png)
+      ![ws name.](media/avd-14.png)
 
 1. After the desktop loads, search for **PowerShell (1)**, then right-click **Windows PowerShell (2)** and select **Run as Administrator (3)**.
 
@@ -64,7 +64,7 @@ In this exercise, you will configure Multimedia Redirection (MMR) for Azure Virt
 
    ![ws name.](./media/teamsopenn.png)
 
-1. In the Everyone together in Teams pane, click on Sign in as **<inject key="AzureAdUserEmail" />**.
+1. In the Everyone together in Teams pane, click on **Sign in** as **<inject key="AzureAdUserEmail" />**.
 
    ![ws name.](./media/teamsopena.png)
    
@@ -75,7 +75,7 @@ In this exercise, you will configure Multimedia Redirection (MMR) for Azure Virt
 
    >**Note:** If you get **Let Microsoft Teams VDI Optimiser access your camera or microphone** pop ups, click on **Yes**
 
-1. After the Teams application is launched, click on the **three dots** **(1)** then, click on **Settings** **(2)**.
+1. After the Teams application is launched, click on the **ellipsis(...)** **(1)** then, click on **Settings** **(2)**.
 
    ![ws name.](media/avdv215n.png)
 

@@ -74,7 +74,7 @@ In this exercise, you will install and configure the Remote Desktop client on yo
 
    ![ws name.](media/ex4t1s9.png)
 
-1. Navigate to Azure portal, then search for *Host pools (1)* in search bar and select **Host pools (2)** from the suggestions.
+1. Navigate to Azure portal, then search for **Host pools (1)** in search bar and select **Host pools (2)** from the suggestions.
 
    ![ws name.](media/avd-9.png)
 
@@ -82,7 +82,7 @@ In this exercise, you will install and configure the Remote Desktop client on yo
 
    ![ws name.](media/avd-39.png)
 
-1. Return to your **PC Remote Desktop application**, click on the three dots **(...) (1)**, and then select **Refresh (2)**.
+1. Return to your **PC Remote Desktop application**, click on the **ellipsis (...) (1)**, and then select **Refresh (2)**.
 
    ![ws name.](media/avd-13.png)
       
@@ -90,7 +90,7 @@ In this exercise, you will install and configure the Remote Desktop client on yo
 
    ![ws name.](media/ex4t1s10.png)
    
-1. A window saying *Starting your app*, will appear. Wait for a few seconds, then enter your password to access the Application.
+1. A window saying **Starting your app**, will appear. Wait for a few seconds, then enter your password to access the Application.
 
    > **Note:** If you are unable to sign in using the provided password, try logging in with the **AzurePassword** available in the **AzureCreds** file on the desktop.
 
@@ -144,24 +144,20 @@ In this exercise, you will access the full AVD Session Desktop by updating the h
 
     ![ws name.](media/avd-9na.png)
 
-1. Return to WVD client application then click on the three dots **(...) (1)**, and then select **Refresh (2)**.
+1. Return to WVD client application then click on the **ellipis (...) (1)**, and then select **Refresh (2)**.
 
 1. Return to AVD client application. On the AVD dashboard, click on the tile named **Session Desktop** to launch the desktop.
 
    ![ws name.](media/labinst24.png)
    
-1. A window saying *Connecting to: Session Desktop* will appear. Wait for a few seconds, then enter your password to access the Desktop.
+1. A window saying **Connecting to: Session Desktop** will appear. Wait for a few seconds, then enter your password to access the Desktop.
 
    > **Note:** If you are unable to sign in using the provided password, try logging in with the **AzurePassword** available in the **AzureCreds** file on the desktop.
 
    - Password: **<inject key="AzureAdUserPassword" />**
    
-      ![ws name.](media/avd-51.png)
+      ![ws name.](media/avd-14.png)
    
-      >**Note:** If there's a dialog box saying ***Help us protect your account***, then select the **Skip for now** option.
-   
-      ![](media/skipfornow.png)
-
 1. Wait for the Session Desktop to connect.
 
    ![ws name.](media/ex4t2s4.png)

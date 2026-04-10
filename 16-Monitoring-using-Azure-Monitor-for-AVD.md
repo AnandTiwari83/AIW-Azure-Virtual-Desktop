@@ -1,4 +1,4 @@
-# Lab 15: Monitoring using Azure Monitor for AVD
+# Lab 2(B): Monitoring using Azure Monitor for AVD
 
 ### Estimated Duration: 20 Minutes
 
@@ -18,7 +18,7 @@ In this task, you will access the Azure Virtual Desktop environment using both t
 
    ![ws name.](media/137.png)
    
-1. Click on the **ellipses(...)** and select **Unsubscribe**. Click on **Continue** for any warning.
+1. Click on the **ellipsis(...)** and select **Unsubscribe**. Click on **Continue** for any warning.
 
    ![ws name.](media/lb16.png)
 
@@ -52,7 +52,7 @@ In this task, you will access the Azure Virtual Desktop environment using both t
    - Username: Paste the username  **<inject key="Avd User 02" />** then click on **Next**.
    - Password: Paste the password **<inject key="AVD User Password" />** and click on* **OK**.
    
-   ![ws name.](media/lb37.png)
+   ![ws name.](media/lb37-1.png)
   
 1. The virtual Desktop will launch as shown below. 
 
@@ -71,7 +71,7 @@ In this task, you will use Azure Virtual Desktop Insights to monitor your enviro
 
    ![ws name.](media-2/Lab2(a)-ex2-step2.png)
    
-1. In **Insights** page, click on **Overview** tab. Here you can see **gs-avd-hp** host pool, Scroll down,you will be able to monitor the connection diagnostics and performance and utilization of the session hosts.
+1. In **Insights** page, click on **Overview** tab. Here you can see **gs-avd-hp** host pool. Scroll down,you will be able to monitor the connection diagnostics and performance and utilization of the session hosts.
 
    ![ws name.](media-1/new-avd-lab13-18.jpg)
    

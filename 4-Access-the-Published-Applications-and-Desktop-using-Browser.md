@@ -80,11 +80,11 @@ In this exercise, you will access the published RemoteApp application by configu
    > - Select the two AVD VMs and then click on the **RESTART** button from the top ribbon menu.
    > - After a minute or two; once the AVD Session host VMs are restarted; try the step again.
 
-1. Enter username **<inject key="AzureAdUserEmail" />** on **Activate Office window** and click on **Next**.
+1. Enter username **<inject key="AzureAdUserEmail" />** on **Activate Office** window and click on **Next**.
 
    ![ws name.](media/avd-43.png)
 
-   >**Note:** If you get a popup saying *Move Text in and out of Remote Desktop*, click on the ***Don't show again*** checkbox and then click on the ***Got it button***.
+   >**Note:** If you get a popup saying Move Text in and out of Remote Desktop, click on the **Don't show again** checkbox and then click on the **Got it button**.
    
    ![ws name.](media/uiupdate06.png)
 

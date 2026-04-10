@@ -21,8 +21,11 @@ In this lab, you will complete the following exercises:
 
 In this exercise, you will set up Multi-Factor Authentication (MFA) by signing in to the security verification page, adding Microsoft Authenticator as a sign-in method, configuring the app on your mobile device, scanning the QR code, and completing verification to successfully enable MFA for your account.
 
-1. In your JumpVM launch browser and visit `https://AKA.ms/proofup` and if asked to log in then log in using the following credentials:
+1. In your JumpVM launch browser and visit the below link and if asked to log in then log in using the following credentials:
 
+   ```
+   https://AKA.ms/proofup
+   ```
    - Username: **<inject key="AzureAdUserEmail" />**
    - Password: **<inject key="AzureAdUserPassword" />**
    
@@ -76,7 +79,7 @@ In this exercise, you will create and configure a Conditional Access policy by d
    
    ![](media-1/L10E2S2.png)
    
-4. In **Enable Security defaults** pane, for **Enable Security defaults** make sure it is selected to **Disable**.
+4. In **Security defaults** pane, for **Security defaults** make sure it is selected to **Disable**.
  
    > **Note:** Please ignore and proceed further if you find any survey points by Azure below **Enable Security defaults** option
    
@@ -98,7 +101,7 @@ In this exercise, you will create and configure a Conditional Access policy by d
 
    - Name: **AVD-MFA** **(1)**
    - **Assignments**:
-     - Click on **0 users or agents(Preview) selected** **(2)** under Users or agents (Preview) option.
+     - Click on **0 users or agents (Preview) selected** **(2)** under Users or agents (Preview) option.
      - A new window will slide in, click on **Select users and Groups** **(3)** and then select the check box saying **Users and groups** **(4)**
      - Now a *Select* window will open, here search for ODL user **<inject key="AzureAdUserEmail" />** then select it and then click on **Select** **(5)** button.
    
@@ -142,7 +145,7 @@ In this exercise, you will create and configure a Conditional Access policy by d
 
 10. Now to log in, enter the lab credentials as mentioned below:
 
-      - Username: Paste the username **<inject key="AzureAdUserEmail" />** *and then click on **Next**.*
+      - Username: Paste the username **<inject key="AzureAdUserEmail" />** and then click on **Next**.
    
          ![ws name.](media/vd55.png)
 
@@ -222,11 +225,7 @@ In this exercise, you will enable and validate Screen Capture Protection for Azu
 
    - Password: **<inject key="AzureAdUserPassword" />**
    
-      ![ws name.](media/ch14.png)
-   
-      >**Note:** If there's a dialog box saying **Stay signed in**, then select the **No** option.
-
-      ![](media/login1.png)
+      ![ws name.](media/avd-14.png)
 
 1. While the Session Desktop is connecting, we can see a message saying **Starting remote PC**.
 
@@ -272,7 +271,7 @@ In this exercise, you will enable and validate Screen Capture Protection for Azu
 
    ![](./media/continue.png)
    
-1. Navigate back to the path **C:\Users\ODL_UserDID\Documents\AVDGPTemplate\en-us**, please replace **DID** in **ODL_UserDID** with **<inject key="DeploymentID" enableCopy="false"/>** and copy **terminalserver-avd.adml** file to **C:\Windows\PolicyDefinitions\en-us** folder.
+1. Navigate to the path **C:\Users\ODL_UserDID\Documents\AVDGPTemplate\en-us**, please replace **DID** in **ODL_UserDID** with **<inject key="DeploymentID" enableCopy="false"/>** and copy **terminalserver-avd.adml** file to **C:\Windows\PolicyDefinitions\en-us** folder.
 
    ![](media/adml1.png)
 
@@ -281,7 +280,7 @@ In this exercise, you will enable and validate Screen Capture Protection for Azu
    >**Note**: If you get any pop-out stating that the **Destination Folder Access Denied**, click on **Continue**.
 
    ![](./media/continue.png)
-   >**Note**: Ensure **.admx** files are placed in the **PolicyDefinitions** folder and corresponding **.adml** files in the appropriate language subfolder **(en-US)**. Incorrect placement may cause policy errors.
+   >**Note**: Ensure **.admx** file are placed in the **PolicyDefinitions** folder and corresponding **.adml** file in the appropriate language subfolder **(en-US)**. Incorrect placement may cause policy errors.
    
 1. From the Start menu of your Session Desktop, search for **group policy** and select **Edit group policy**.
 

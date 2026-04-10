@@ -160,11 +160,7 @@ In this task, you will download the pre-created rule sets into the session host 
 
    - Password: **<inject key="AzureAdUserPassword" />**
    
-   ![ws name.](media/ch14.png)
-   
-   >**Note:** If there's a dialog box saying **Stay signed in**, then select the **No** option.
-
-   ![](media/login1.png)
+   ![ws name.](media/avd-14.png)
 
 1. Wait for the Session Desktop to connect.
 

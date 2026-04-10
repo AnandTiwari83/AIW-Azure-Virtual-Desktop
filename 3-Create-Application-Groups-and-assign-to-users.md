@@ -58,7 +58,7 @@ In this exercsie, you will create a new application group of type "RemoteApp" an
 
 1. Then select **+ Add** in the **GS-AVD-HP - Application groups**  
 
-1. In the *Basics* tab, do the following configuration: 
+1. In the **Basics** tab, do the following configuration: 
 
    i. Leave the following parameters to default:
    
@@ -67,14 +67,14 @@ In this exercsie, you will create a new application group of type "RemoteApp" an
          
    ii. Fill in the remaining parameters below:  
    
-      - Resource Group: *Select* **AVD-Hostpool-RG-avd (1)** *from the dropdown*.
+      - Resource Group: Select **AVD-Hostpool-RG-avd (1)** from the dropdown.
       - Application Group Type: **RemoteApp (2)** 
       - Application Group Name: **AVD-AG-01 (3)**
       - Click on **Next: Applications > (4)**
 
          ![ws name.](media-2/avd-38n.png)
 
-1. On the *Applications* tab, click on **+ Add Applications** to add applications to this application group.
+1. On the **Applications** tab, click on **+ Add Applications** to add applications to this application group.
 
    ![ws name.](media/ag1.png)
 

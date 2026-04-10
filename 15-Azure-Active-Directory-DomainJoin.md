@@ -23,7 +23,7 @@ In this exercise, We'll be creating the Host pool using **Getting Started Wizard
 1. On the **Basics** tab, provide the following information and click **Next: Session hosts >** **(10)**.
 
    - Subscription: **Leave it as default (1)**
-   - Resource Group prefix: Enter ***AVD-HostPool-RG-avd (2)***
+   - Resource Group prefix: Enter **AVD-HostPool-RG-avd (2)**
    - Host pool name: **AVD-AADJ-HP (3)**
    - Location: Select **<inject key="Region" enableCopy="false"/> (4)** from the drop-down list.
    - Preferred app group type: **Desktop (5)**
@@ -37,7 +37,7 @@ In this exercise, We'll be creating the Host pool using **Getting Started Wizard
 1. On the **Virtual Machines** tab, provide the following information :
 
    - Add virtual machines: **Yes (1)**
-   - Resource Group prefix: Enter ***AVD-HostPool-RG-avd (2)***
+   - Resource Group prefix: Enter **AVD-HostPool-RG-avd (2)**
    - Name prefix: **AVD-AADJ-HP (3)**
    - Virtual machine type: **Azure virtual machine (4)**
    - Virtual machine location: Select **<inject key="Region" enableCopy="false"/> (5)** from the drop-down list.

@@ -62,11 +62,11 @@ In this exercise, you will install and configure the Remote Desktop client on yo
   
 1. Enter your **credentials** to access the workspace.
      >**Note**: If there is already an account signed in on your PC, click on + Use another account to authenticate using the user provided below.
-   - Username: Paste your username **<inject key="AzureAdUserEmail" />** and then click on **Next**.
+   - Username: Paste your username **<inject key="AzureAdUserEmail"></inject>** and then click on **Next**.
    
       ![ws name.](media/avd-41.png)
 
-   - Password: Paste the password **<inject key="AzureAdUserPassword" />** and click on **Sign in**.
+   - Password: Paste the password **<inject key="AzureAdUserPassword"></inject>** and click on **Sign in**.
 
       ![ws name.](media/vd6.png)
    
@@ -94,7 +94,7 @@ In this exercise, you will install and configure the Remote Desktop client on yo
 
    > **Note:** If you are unable to sign in using the provided password, try logging in with the **AzurePassword** available in the **AzureCreds** file on the desktop.
 
-    - Password: **<inject key="AzureAdUserPassword" />**
+    - Password: **<inject key="AzureAdUserPassword"></inject>**
    
       ![ws name.](media/avd-14.png)
 
@@ -116,7 +116,7 @@ In this exercise, you will install and configure the Remote Desktop client on yo
 
    ![ws name.](media/w1.png)
 
-1. Click on **User (1)** under **Manage** blade, then paste **<inject key="AzureAdUserEmail" /> (2)** in the search bar and click on your user to open it **(3).**
+1. Click on **User (1)** under **Manage** blade, then paste **<inject key="AzureAdUserEmail"></inject> (2)** in the search bar and click on your user to open it **(3).**
 
    ![ws name.](media/avd-12.png)
 
@@ -154,7 +154,7 @@ In this exercise, you will access the full AVD Session Desktop by updating the h
 
    > **Note:** If you are unable to sign in using the provided password, try logging in with the **AzurePassword** available in the **AzureCreds** file on the desktop.
 
-   - Password: **<inject key="AzureAdUserPassword" />**
+   - Password: **<inject key="AzureAdUserPassword"></inject>**
    
       ![ws name.](media/avd-14.png)
    

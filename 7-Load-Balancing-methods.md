@@ -156,11 +156,11 @@ While creating the GS-AVD-HP host pool, we selected the load balancing method as
    aka.ms/wvdarmweb
    ```
 
-   - Username: Paste the username  **<inject key="Avd User 01" />** then click on **Next**.
+   - Username: Paste the username  **<inject key="Avd User 01"></inject>** then click on **Next**.
    
       ![ws name.](media/username.png)
 
-   - Password:  Paste the password **<inject key="AVD User Password" /> (1)** and click on **Sign in (2)**.
+   - Password:  Paste the password **<inject key="AVD User Password"></inject> (1)** and click on **Sign in (2)**.
 
       ![ws name.](media/vd6-1.png)
 
@@ -215,15 +215,15 @@ While creating the GS-AVD-HP host pool, we selected the load balancing method as
 
    ![ws name.](media-2/avddesktop.png)
 
-1. Select **Allow** on the prompt asking permission to *Access local resources*.
+1. Select **Allow** on the prompt asking permission to **Access local resources**.
 
     ![ws name.](media/lab4-10.png)
 
 1. Enter your **credentials** to access the application and click on **Submit**.
 
-   - Username: Paste the username **<inject key="Avd User 01" />** .
+   - Username: Paste the username **<inject key="Avd User 01"></inject>** .
 
-   - Password: Paste the password  **<inject key="AVD User Password" />** and click on **Submit**.
+   - Password: Paste the password  **<inject key="AVD User Password"></inject>** and click on **Submit**.
 
       ![ws name.](media/lab4-2-1.png)
 
@@ -247,8 +247,8 @@ While creating the GS-AVD-HP host pool, we selected the load balancing method as
 
 1. Enter the user credentials to access the workspace.
 
-   - Username: Paste the username **<inject key="Avd User 02" />** *then click on* **Next**.
-   - Password: Paste the password **<inject key="AVD User Password" /> (1)** and click on **Sign in (2)**.
+   - Username: Paste the username **<inject key="Avd User 02"></inject>** *then click on* **Next**.
+   - Password: Paste the password **<inject key="AVD User Password"></inject> (1)** and click on **Sign in (2)**.
 
       ![ws name.](media/vd6-1.png)
 
@@ -274,7 +274,7 @@ While creating the GS-AVD-HP host pool, we selected the load balancing method as
 
 1. Enter your **credentials** to access the application and click on **Submit**.
 
-   - Password: Paste the password **<inject key="AVD User Password" /> (1)** and click on **OK (2)**.
+   - Password: Paste the password **<inject key="AVD User Password"></inject> (1)** and click on **OK (2)**.
 
       ![ws name.](media/lb37-1.png)
 
@@ -346,9 +346,9 @@ While creating the GS-AVD-HP host pool, we selected the load balancing method as
 
     >**Note:** If it’s not connecting, please wait for about 5 minutes and then try opening the Remote app again using a private/incognito browser window. 
 
-    - Username: Paste the username  **<inject key="Avd User 01" />** then click on **Next**.
+    - Username: Paste the username  **<inject key="Avd User 01"></inject>** then click on **Next**.
 
-    - Password: Paste the password **<inject key="AVD User Password" />**.
+    - Password: Paste the password **<inject key="AVD User Password"></inject>**.
 
       ![ws name.](media/lab4-2-1.png)
 
@@ -368,8 +368,8 @@ While creating the GS-AVD-HP host pool, we selected the load balancing method as
 
    > **Note:** If you are unable to sign in using the provided password, try logging in with the **AzurePassword** available in the **AzureCreds** file on the desktop.
 
-   - Username: Paste the username **<inject key="Avd User 02" />** *then click on **Next**.*
-   - Password: Paste the password **<inject key="AVD User Password" />** *and click on **OK**.* 
+   - Username: Paste the username **<inject key="Avd User 02"></inject>** *then click on **Next**.*
+   - Password: Paste the password **<inject key="AVD User Password"></inject>** *and click on **OK**.* 
 
       ![ws name.](media/lb37-1.png)
 

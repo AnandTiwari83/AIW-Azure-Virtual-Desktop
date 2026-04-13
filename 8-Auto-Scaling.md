@@ -54,7 +54,7 @@ In this exercise, you will create an Azure Virtual Desktop scaling plan by first
 
     ![](./media/notepad.png)
     
-8. In the JSON file, replace the subscription ID with **<inject key="Subscription Name" />** and save the changes by clicking on **File (1) -> Save (2).**
+8. In the JSON file, replace the subscription ID with **<inject key="Subscription Name"></inject>** and save the changes by clicking on **File (1) -> Save (2).**
 
     ![](./media/avd-36.png)       
 

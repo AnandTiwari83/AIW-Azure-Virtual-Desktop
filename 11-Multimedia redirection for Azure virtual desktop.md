@@ -46,7 +46,7 @@ In this exercise, you will configure Multimedia Redirection (MMR) for Azure Virt
    
 1. A window saying **Starting your app*, will appear. Wait for a few seconds, then enter your password to access the Application.
 
-    - Password: **<inject key="AzureAdUserPassword" />**
+    - Password: **<inject key="AzureAdUserPassword"></inject>**
 
       ![ws name.](media/avd-14.png)
 
@@ -64,11 +64,11 @@ In this exercise, you will configure Multimedia Redirection (MMR) for Azure Virt
 
    ![ws name.](./media/teamsopenn.png)
 
-1. In the Everyone together in Teams pane, click on **Sign in** as **<inject key="AzureAdUserEmail" />**.
+1. In the Everyone together in Teams pane, click on **Sign in** as **<inject key="AzureAdUserEmail"></inject>**.
 
    ![ws name.](./media/teamsopena.png)
    
-1. Enter password: **<inject key="AzureAdUserPassword" />**
+1. Enter password: **<inject key="AzureAdUserPassword"></inject>**
 
    ![ws name.](media/vd6.png)
    >**Note:** After you log in to Microsoft Teams, if a pop-up appears showing “What’s New in Teams”, click on “Continue” and then select “Got it” to proceed.

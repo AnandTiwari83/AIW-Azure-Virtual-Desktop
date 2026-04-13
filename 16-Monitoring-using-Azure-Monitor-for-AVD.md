@@ -30,9 +30,9 @@ In this task, you will access the Azure Virtual Desktop environment using both t
 
 1. Enter the user credentials to access the workspace.
 
-   - Username: Paste the username  **<inject key="Avd User 02" />** *then click on* **Next**.
+   - Username: Paste the username  **<inject key="Avd User 02"></inject>** then click on **Next**.
    
-   - Password: Paste the password  **<inject key="AVD User Password" />** and click on **Sign in**.
+   - Password: Paste the password  **<inject key="AVD User Password"></inject>** and click on **Sign in**.
 
       ![ws name.](media/password2.png)
        >**Note**: If MFA prompts, please follow the MFA steps provided.
@@ -49,8 +49,8 @@ In this task, you will access the Azure Virtual Desktop environment using both t
 
    > **Note:** If you are unable to sign in using the provided password, try logging in with the **AzurePassword** available in the **AzureCreds** file on the desktop.
 
-   - Username: Paste the username  **<inject key="Avd User 02" />** then click on **Next**.
-   - Password: Paste the password **<inject key="AVD User Password" />** and click on* **OK**.
+   - Username: Paste the username  **<inject key="Avd User 02"></inject>** then click on **Next**.
+   - Password: Paste the password **<inject key="AVD User Password"></inject>** and click on* **OK**.
    
    ![ws name.](media/lb37-1.png)
   
@@ -75,7 +75,7 @@ In this task, you will use Azure Virtual Desktop Insights to monitor your enviro
 
    ![ws name.](media-1/new-avd-lab13-18.jpg)
    
-1. Click on **Users (1)** tab, In **UPN to search for**, paste **<inject key="Avd User 01" />** **(2)** and wait for the data to load. This tab gives an overview of the user's usage. Scroll down and explore different information loaded.
+1. Click on **Users (1)** tab, In **UPN to search for**, paste **<inject key="Avd User 01"></inject>** **(2)** and wait for the data to load. This tab gives an overview of the user's usage. Scroll down and explore different information loaded.
 
    ![ws name.](media-1/new-avd-lab13-23.jpg)
    

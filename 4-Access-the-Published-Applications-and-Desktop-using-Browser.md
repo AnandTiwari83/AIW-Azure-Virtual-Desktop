@@ -45,11 +45,11 @@ In this exercise, you will access the published RemoteApp application by configu
 
 1. To login, enter the lab credentials below:
 
-   - Username: Paste your username **<inject key="AzureAdUserEmail" />** and then click on **Next**.
+   - Username: Paste your username **<inject key="AzureAdUserEmail"></inject>** and then click on **Next**.
    
       ![ws name.](media/avd-41.png)
 
-   - Temporary Access Pass: Paste the password **<inject key="AzureAdUserPassword" />** and click on **Sign in**.
+   - Temporary Access Pass: Paste the password **<inject key="AzureAdUserPassword"></inject>** and click on **Sign in**.
 
       ![ws name.](media/vd6.png)
 
@@ -65,9 +65,9 @@ In this exercise, you will access the published RemoteApp application by configu
 
    > **Note:** If you are unable to sign in using the provided password, try logging in with the **AzurePassword** available in the **AzureCreds** file on the desktop.
 
-   - Username: **<inject key="AzureAdUserEmail" />** 
+   - Username: **<inject key="AzureAdUserEmail"></inject>** 
   
-   - Password: **<inject key="AzureAdUserPassword" />**
+   - Password: **<inject key="AzureAdUserPassword"></inject>**
 
       ![ws name.](media/lab4-2.png)
       
@@ -80,7 +80,7 @@ In this exercise, you will access the published RemoteApp application by configu
    > - Select the two AVD VMs and then click on the **RESTART** button from the top ribbon menu.
    > - After a minute or two; once the AVD Session host VMs are restarted; try the step again.
 
-1. Enter username **<inject key="AzureAdUserEmail" />** on **Activate Office** window and click on **Next**.
+1. Enter username **<inject key="AzureAdUserEmail"></inject>** on **Activate Office** window and click on **Next**.
 
    ![ws name.](media/avd-43.png)
 
@@ -88,7 +88,7 @@ In this exercise, you will access the published RemoteApp application by configu
    
    ![ws name.](media/uiupdate06.png)
 
-1. Enter password **<inject key="AzureAdUserPassword" />** and click on **Sign in**.
+1. Enter password **<inject key="AzureAdUserPassword"></inject>** and click on **Sign in**.
 
    ![ws name.](media/vd6.png)
 
@@ -126,9 +126,9 @@ In this exercise, you will access the published AVD desktop by updating the host
 
    > **Note:** If you are unable to sign in using the provided password, try logging in with the **AzurePassword** available in the **AzureCreds** file on the desktop.
 
-   - Username: **<inject key="AzureAdUserEmail" />** 
+   - Username: **<inject key="AzureAdUserEmail"></inject>** 
   
-   - Password: **<inject key="AzureAdUserPassword" />**
+   - Password: **<inject key="AzureAdUserPassword"></inject>**
 
       ![ws name.](media/lab4-2.png)
 
@@ -142,7 +142,7 @@ In this exercise, you will access the published AVD desktop by updating the host
 
    ![ws name.](media/w1.png)
 
-1. Click on **Users (1)** under **Manage** blade, then paste **<inject key="AzureAdUserEmail" /> (2)** in the search bar and click on your user to open it **(3).**
+1. Click on **Users (1)** under **Manage** blade, then paste **<inject key="AzureAdUserEmail"></inject> (2)** in the search bar and click on your user to open it **(3).**
 
     ![ws name.](media/avd-12.png)
 

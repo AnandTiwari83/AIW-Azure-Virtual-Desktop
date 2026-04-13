@@ -26,14 +26,14 @@ In this exercise, you will set up Multi-Factor Authentication (MFA) by signing i
    ```
    https://AKA.ms/proofup
    ```
-   - Username: **<inject key="AzureAdUserEmail" />**
-   - Password: **<inject key="AzureAdUserPassword" />**
+   - Username: **<inject key="AzureAdUserEmail"></inject>**
+   - Password: **<inject key="AzureAdUserPassword"></inject>**
    
 1. If there is pop-up entitled **Stay signed in?** with buttons for **No** and **Yes** - Choose **No**.  
 
     ![](media/g10.png)
     
-1. If you're automatically signed in using the **<inject key="AzureAdUserEmail" />**, proceed to the **Security info** page. Click on **+ Add sign-in method**.
+1. If you're automatically signed in using the **<inject key="AzureAdUserEmail"></inject>**, proceed to the **Security info** page. Click on **+ Add sign-in method**.
 
    ![](media/lab11-1.png)
 
@@ -103,7 +103,7 @@ In this exercise, you will create and configure a Conditional Access policy by d
    - **Assignments**:
      - Click on **0 users or agents (Preview) selected** **(2)** under Users or agents (Preview) option.
      - A new window will slide in, click on **Select users and Groups** **(3)** and then select the check box saying **Users and groups** **(4)**
-     - Now a *Select* window will open, here search for ODL user **<inject key="AzureAdUserEmail" />** then select it and then click on **Select** **(5)** button.
+     - Now a Select window will open, here search for ODL user **<inject key="AzureAdUserEmail"></inject>** then select it and then click on **Select** **(5)** button.
    
          ![](media-1/vd46.png)
    
@@ -145,11 +145,11 @@ In this exercise, you will create and configure a Conditional Access policy by d
 
 10. Now to log in, enter the lab credentials as mentioned below:
 
-      - Username: Paste the username **<inject key="AzureAdUserEmail" />** and then click on **Next**.
+      - Username: Paste the username **<inject key="AzureAdUserEmail"></inject>** and then click on **Next**.
    
          ![ws name.](media/vd55.png)
 
-      - Password: Paste the password **<inject key="AzureAdUserPassword" />** and click on **Sign in**.
+      - Password: Paste the password **<inject key="AzureAdUserPassword"></inject>** and click on **Sign in**.
 
          ![ws name.](media/vd6.png)
    
@@ -201,11 +201,11 @@ In this exercise, you will enable and validate Screen Capture Protection for Azu
 
      >**Note**: If there is already an account signed in on your PC, click on + Use another account to authenticate using the user provided below.
 
-    - Username: Paste the username **<inject key="AzureAdUserEmail" />** and then click on **Next**.
+    - Username: Paste the username **<inject key="AzureAdUserEmail"></inject>** and then click on **Next**.
    
       ![ws name.](media/vd55.png)
 
-    - Password: Paste the password **<inject key="AzureAdUserPassword" />** and click on **Sign in**.
+    - Password: Paste the password **<inject key="AzureAdUserPassword"></inject>** and click on **Sign in**.
 
       ![ws name.](media/vd6.png)
       
@@ -223,7 +223,7 @@ In this exercise, you will enable and validate Screen Capture Protection for Azu
    
    > **Note:** If you are unable to sign in using the provided password, try logging in with the **AzurePassword** available in the **AzureCreds** file on the desktop.
 
-   - Password: **<inject key="AzureAdUserPassword" />**
+   - Password: **<inject key="AzureAdUserPassword"></inject>**
    
       ![ws name.](media/avd-14.png)
 

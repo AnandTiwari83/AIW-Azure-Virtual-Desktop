@@ -146,11 +146,11 @@ In this task, you will unsubscribe and resubscribe to the AVD workspace using th
 
 1. Enter the user credentials to access the workspace.
 
-   - Username: Paste the username **<inject key="AzureAdUserEmail" />** *then click on* **Next**.
+   - Username: Paste the username **<inject key="AzureAdUserEmail"></inject>** then click on **Next**.
 
      ![ws name.](media/vd55.png)
    
-   - Password: Paste the password  **<inject key="AzureAdUserPassword" />** *and click on* **Sign in**.
+   - Password: Paste the password  **<inject key="AzureAdUserPassword"></inject>** and click on **Sign in**.
 
       ![ws name.](media/vd6.png)
 
@@ -162,7 +162,7 @@ In this task, you will unsubscribe and resubscribe to the AVD workspace using th
 
    > **Note:** If you are unable to sign in using the provided password, try logging in with the **AzurePassword** available in the **AzureCreds** file on the desktop.
 
-   - Password: **<inject key="AzureAdUserPassword" />**
+   - Password: **<inject key="AzureAdUserPassword"></inject>**
    
    ![ws name.](media/avd-14.png)
 

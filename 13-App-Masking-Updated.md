@@ -136,11 +136,11 @@ In this task, you will download the pre-created rule sets into the session host 
   
 1. Enter your **credentials** to access the workspace.
 
-   - Username: Paste the username **<inject key="AzureAdUserEmail" />** and then click on **Next**.
+   - Username: Paste the username **<inject key="AzureAdUserEmail"></inject>** and then click on **Next**.
    
      ![ws name.](media/95.png)
 
-   - Password: Paste the password **<inject key="AzureAdUserPassword" />** and click on **Sign in**.
+   - Password: Paste the password **<inject key="AzureAdUserPassword"></inject>** and click on **Sign in**.
 
      ![ws name.](media/96.png)
    
@@ -158,7 +158,7 @@ In this task, you will download the pre-created rule sets into the session host 
    
 1. A window saying **Connecting to: Session Desktop** will appear. Wait for a few seconds, then enter your password to access the Desktop.
 
-   - Password: **<inject key="AzureAdUserPassword" />**
+   - Password: **<inject key="AzureAdUserPassword"></inject>**
    
    ![ws name.](media/avd-14.png)
 
@@ -200,11 +200,11 @@ In this task, you will download the pre-created rule sets into the session host 
    aka.ms/wvdarmweb
    ```
 
-   - Username: Enter the username  **<inject key="Avd User 01" />** then click on **Next**.
+   - Username: Enter the username  **<inject key="Avd User 01"></inject>** then click on **Next**.
    
       ![ws name.](media/username.png)
 
-   - Password: Paste the password  **<inject key="AVD User Password" />** *and click on* **Sign in**.
+   - Password: Paste the password  **<inject key="AVD User Password"></inject>** and click on **Sign in**.
 
       ![ws name.](media/password.png)
 
@@ -222,9 +222,9 @@ In this task, you will download the pre-created rule sets into the session host 
 
 1. Enter your **credentials** to access the application and click on **Submit**.
 
-   - Username: Paste the username  **<inject key="Avd User 01" />** then click on **Next**.
+   - Username: Paste the username  **<inject key="Avd User 01"></inject>** then click on **Next**.
    
-   - Password: Paste the password  **<inject key="AVD User Password" />** *and click on* **Submit**.
+   - Password: Paste the password  **<inject key="AVD User Password"></inject>** and click on **Submit**.
    
       ![ws name.](media/lb52.png)
      

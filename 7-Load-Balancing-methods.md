@@ -107,8 +107,35 @@ In this exercise, you will add new users to Microsoft Entra ID, assign them to t
 
 ## Exercise 2: Update Passwords for the new users
 
-In this exercise, you will update the password for the newly created users in the Microsoft Entra ID.
+In this exercise, you will use PowerShell to run a script that resets the passwords for the newly created users, ensuring they can log in successfully after registering with Azure AD DS.
 
+1. Inside the Jump VM, click on the Windows button look for **PowerShell (1)** and click on **Windows PowerShell (2)**.
+
+   ![ws name](media-2/vd28.png)
+
+1. Copy and paste the following script and hit **Enter**.
+
+   ```
+   Get-AzADDomainService
+   $domain = Get-AzADDomainService
+   $domain = $domain.Name
+   $PasswordProfile = @{
+   Password = 'Azure1234567'
+   ForceChangePasswordNextSignIn = $False
+   }
+   $users = @("AVDUser01@$domain","AVDUser02@$domain")
+   $users
+   $users | foreach{
+   Update-AzADUser -UserPrincipalName $_ -PasswordPolicy DisablePasswordExpiration -PasswordProfile $PasswordProfile
+   }
+   ```
+ 
+1. The output of the script will be similar to the one shown below. The password for both **AVDUser01** and **AVDUser02** is reset to **Azure1234567**.
+
+    ![ws name.](media/vd30.png)
+    ![ws name.](media/vd29.png) 
+
+  >**Note**: ***Username*** and ***Password*** for ***AVDUser01*** and ***AVDUser02*** is present in Environment Details tab.
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    - If you receive a success message, you can proceed to the next task.
@@ -129,21 +156,13 @@ While creating the GS-AVD-HP host pool, we selected the load balancing method as
    aka.ms/wvdarmweb
    ```
 
-   - Username: Paste the username  **<inject key="Avd User 01" />** then click on **Next**.
+   - Username: Paste the username  **<inject key="Avd User 01"></inject>** then click on **Next**.
    
       ![ws name.](media/username.png)
 
-   - Password: Paste the password  that copied in task 1 step 4 and click on **Sign in**.
+   - Password:  Paste the password **<inject key="AVD User Password"></inject> (1)** and click on **Sign in (2)**.
 
-      ![ws name.](media/vd6.png)
-
-1. In the **Update your Password page**, provide below details:
-
-   - Current password: Paste the password  that was copied in task 1 step 4 **(1)**.
-   - New password: Paste the password  **<inject key="AVD User Password" /> (2)**
-   - Confirm password: Paste the password  **<inject key="AVD User Password" /> (3)** and click on **Sign in (4)**.
-
-     ![](media/login123.png)
+      ![ws name.](media/vd6-1.png)
 
 1. If you see the **Action Required** pop up, click on **Ask later.**
 
@@ -196,17 +215,17 @@ While creating the GS-AVD-HP host pool, we selected the load balancing method as
 
    ![ws name.](media-2/avddesktop.png)
 
-1. Select **Allow** on the prompt asking permission to *Access local resources*.
+1. Select **Allow** on the prompt asking permission to **Access local resources**.
 
     ![ws name.](media/lab4-10.png)
 
 1. Enter your **credentials** to access the application and click on **Submit**.
 
-   - Username: Paste the username **<inject key="Avd User 01" />** .
+   - Username: Paste the username **<inject key="Avd User 01"></inject>** .
 
-   - Password: Paste the password  **<inject key="AVD User Password" />** and click on **Submit**.
+   - Password: Paste the password  **<inject key="AVD User Password"></inject>** and click on **Submit**.
 
-      ![ws name.](media/lab4-2.png)
+      ![ws name.](media/lab4-2-1.png)
 
 1. The virtual Desktop will launch as shown below. 
 
@@ -216,7 +235,7 @@ While creating the GS-AVD-HP host pool, we selected the load balancing method as
 
     ![ws name.](media/137.png)
 
-1. Click on the *ellipses* and select **Unsubscribe**. Click on **Continue** in the Are you sure you want to unsubscribe? tab.
+1. Click on the **ellipsis (...)** and select **Unsubscribe**. Click on **Continue** in the Are you sure you want to unsubscribe? tab.
 
     ![ws name.](media/lb16.png)
 
@@ -228,18 +247,10 @@ While creating the GS-AVD-HP host pool, we selected the load balancing method as
 
 1. Enter the user credentials to access the workspace.
 
-   - Username: Paste the username **<inject key="Avd User 02" />** *then click on* **Next**.
-   - Password: Paste the password  that copied in task 1 step 4 and click on **Sign in**.
+   - Username: Paste the username **<inject key="Avd User 02"></inject>** *then click on* **Next**.
+   - Password: Paste the password **<inject key="AVD User Password"></inject> (1)** and click on **Sign in (2)**.
 
-      ![ws name.](media/vd6.png)
-
-1. In the **Update your Password page**, provide below details:
-
-   - Current password: Paste the password  that was copied in task 1 step 4 **(1)**.
-   - New password: Paste the password  **<inject key="AVD User Password" /> (2)**
-   - Confirm password: Paste the password  **<inject key="AVD User Password" /> (3)** and click on **Sign in (4)**.
-
-     ![](media/login123.png)
+      ![ws name.](media/vd6-1.png)
 
       >**Note**: If MFA prompts, please follow the MFA steps provided.
 
@@ -263,28 +274,13 @@ While creating the GS-AVD-HP host pool, we selected the load balancing method as
 
 1. Enter your **credentials** to access the application and click on **Submit**.
 
-   - Username: *Paste the username*  **<inject key="Avd User 02" />** then click on **Next**.
+   - Password: Paste the password **<inject key="AVD User Password"></inject> (1)** and click on **OK (2)**.
 
-   - Password: *Paste the* **<inject key="AVD User Password" />** *and click on* **OK**.
-
-      ![ws name.](media/lb37.png)
+      ![ws name.](media/lb37-1.png)
 
 1. The virtual Desktop will launch as shown below. 
 
      ![ws name.](./media/sessiondesktop1.png) 
-
-   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-   - Scroll down and hit the Validate button in the lab guide for the corresponding task. If you receive a success message, you can proceed to the next task.
-   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
-
-   <validation step="b5b843b1-12f4-483f-b19d-9a50b296c691" />
-
-## Exercise 3: Change and experience Load Balancing methods
-
-**A**. **Breadth-first**
-
-While creating the GS-AVD-HP host pool, we selected the load balancing method as **Breadth-first**. Now, we are going to log in to the Desktop App created on GS-AVD-HP with both users simultaneously and see the user distribution.
 
 1. Return to the Azure portal in your browser inside the **JumpVM**, search for **host pools** and click on **Host pools** from the suggestion to open it.
 
@@ -310,7 +306,7 @@ While creating the GS-AVD-HP host pool, we selected the load balancing method as
 
      ![ws name.](media-1/avd-34.png)
 
-1. Navigate back to *Session hosts* and open **AVD-HP01-SH-1...** session host, click on **Users (1)** and you can see the user logged in to that session host. Now select the user **(2)** and click on the **Sign out users (3)** button and select **Sign out (4)** to the prompt asking *This will Sign out selected users from session host AVD-HP01-SH-1*.
+1. Navigate back to **Session hosts** and open **AVD-HP01-SH-1...** session host, click on **Users (1)** and you can see the user logged in to that session host. Now select the user **(2)** and click on the **Sign out users (3)** button and select **Sign out (4)** to the prompt asking *This will Sign out selected users from session host AVD-HP01-SH-1*.
 
      ![ws name.](media-2/avd-35.png)
 
@@ -350,11 +346,11 @@ While creating the GS-AVD-HP host pool, we selected the load balancing method as
 
     >**Note:** If it’s not connecting, please wait for about 5 minutes and then try opening the Remote app again using a private/incognito browser window. 
 
-    - Username: Paste the username  **<inject key="Avd User 01" />** then click on **Next**.
+    - Username: Paste the username  **<inject key="Avd User 01"></inject>** then click on **Next**.
 
-    - Password: Paste the password **<inject key="AVD User Password" />**.
+    - Password: Paste the password **<inject key="AVD User Password"></inject>**.
 
-      ![ws name.](media/lab4-2.png)
+      ![ws name.](media/lab4-2-1.png)
 
 1. The virtual Desktop will launch as shown below. 
 
@@ -372,10 +368,10 @@ While creating the GS-AVD-HP host pool, we selected the load balancing method as
 
    > **Note:** If you are unable to sign in using the provided password, try logging in with the **AzurePassword** available in the **AzureCreds** file on the desktop.
 
-   - Username: *Paste the username*  **<inject key="Avd User 02" />** *then click on **Next**.*
-   - Password: *Paste the* **<inject key="AVD User Password" />** *and click on **OK**.* 
+   - Username: Paste the username **<inject key="Avd User 02"></inject>** *then click on **Next**.*
+   - Password: Paste the password **<inject key="AVD User Password"></inject>** *and click on **OK**.* 
 
-      ![ws name.](media/lb37.png)
+      ![ws name.](media/lb37-1.png)
 
 1. The virtual Desktop will launch as shown below.
 

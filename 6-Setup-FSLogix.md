@@ -37,7 +37,7 @@ In the exercsie, we will be creating a storage account with a file share which w
    
    - Storage account name: **<inject key="Storage Account Name" /> (3)**   
       
-   - Region: Select **<inject key="Region" /> (4)** from the drop-down list.  
+   - Region: Select **<inject key="Region" enableCopy="false"/> (4)** from the drop-down list.  
    
    - Performance: **Standard (5)**   
    
@@ -88,7 +88,7 @@ In the exercsie, we will be creating a storage account with a file share which w
     
     >**Note:** Setting this property implicitly **domain joins** the storage account with the associated Azure AD DS deployment. Azure AD DS authentication over SMB is then enabled for all new and existing file shares in the storage account.
  
-11. Return to the **<inject key="Storage Account Name" />**  storage account and on the left pane, click on **File shares (1)** present under **Data Storage**, then click on **Refresh (2)** a few times until the status of the Active Directory changes to **Configured (3)** before continuing.
+11. Return to the **<inject key="Storage Account Name" enableCopy="false"/>**  storage account and on the left pane, click on **File shares (1)** present under **Data Storage**, then click on **Refresh (2)** a few times until the status of the Active Directory changes to **Configured (3)** before continuing.
 
     ![ws name.](media-2/avd-48.png)
  
@@ -108,13 +108,13 @@ In the exercsie, we will be creating a storage account with a file share which w
 
 ## Exercise 2: Configure File Share
 
-In this exercise, we will give *Storage File Data SMB Share Contributor* permissions to **permission - fslogixcontainer** group which you'll be creating so that their profiles can be stored in the file shares.
+In this exercise, we will give Storage File Data SMB Share Contributor permissions to **permission - fslogixcontainer** group which you'll be creating so that their profiles can be stored in the file shares.
 
 1. Navigate to the Azure portal, then search for **Microsoft Entra ID (1)** in the search bar and select **Microsoft Entra ID (2)** from the suggestions.
    
    ![ws name.](media/dev3.png)
    
-1. Click on **Groups** under *Manage*.
+1. Click on **Groups** under **Manage** blade.
 
    ![ws name.](media/avd-17.png)
    
@@ -137,11 +137,11 @@ In this exercise, we will give *Storage File Data SMB Share Contributor* permiss
 
    ![ws name.](media-1/Ex6-task2-step6.png)
    
-1. Search and select username **<inject key="AzureAdUserEmail" /> (1)** and click on **Select (2)**.
+1. Search and select username **<inject key="AzureAdUserEmail"></inject> (1)** and click on **Select (2)**.
 
    ![ws name.](media/vd15.png)
    
-1. Navigate to Storage Account **<inject key="Storage Account Name" />**, select **File Shares (1)** under Data Storage and click on **userprofile (2)** to open file share we created earlier.
+1. Navigate to Storage Account **<inject key="Storage Account Name" enableCopy="false"/>**, select **File Shares (1)** under Data Storage and click on **userprofile (2)** to open file share we created earlier.
 
    ![ws name.](media/avd-19.png)
      
@@ -158,9 +158,9 @@ In this exercise, we will give *Storage File Data SMB Share Contributor* permiss
      ![ws name.](media/avd-20.png)
    
       >**Note:** There are three Azure built-in roles for granting share-level permissions to users:
-      > - *Storage File Data SMB Share Reader* allows read access in Azure Storage file shares over SMB.
-      > - *Storage File Data SMB Share Contributor* allows read, write, and delete access in Azure Storage file shares over SMB.
-      > - *Storage File Data SMB Share Elevated Contributor* allows read, write, delete, and modify Windows ACLs in Azure Storage file shares over SMB.
+      > - **Storage File Data SMB Share Reader** allows read access in Azure Storage file shares over SMB.
+      > - **Storage File Data SMB Share Contributor** allows read, write, and delete access in Azure Storage file shares over SMB.
+      > - **Storage File Data SMB Share Elevated Contributor** allows read, write, delete, and modify Windows ACLs in Azure Storage file shares over SMB.
    
    - Under the **Members** tab, follow the below steps:
 
@@ -287,7 +287,7 @@ In this Exercise, we will install and configure FSLogix in the **AVD-HP01-SH-0**
    > 
    >iii) Set the profile container location to the Azure file share location we created.
 
-7. In line 2 in the script, replace **NameofStorageAccount** with **<inject key="Storage Account Name" />** and then click on **Run** to execute the script.
+7. In line 2 in the script, replace **NameofStorageAccount** with **<inject key="Storage Account Name"></inject>** and then click on **Run** to execute the script.
      ![ws name.](media/jvm24.png)
 
 9. Wait for some time for the script to execute. Once done, it will show an output saying **Script Executed successfully**.
@@ -378,7 +378,7 @@ In this Exercise, we will install and configure FSLogix in the **AVD-HP01-SH-0**
       > 
       >iii) Set the profile container location to the Azure file share location we created.
 
-13. In line 2 in the script, replace **NameofStorageAccount** with **<inject key="Storage Account Name" />** and then click on **Run** to execute the script.
+13. In line 2 in the script, replace **NameofStorageAccount** with **<inject key="Storage Account Name"></inject>** and then click on **Run** to execute the script.
 
     ![ws name.](media/jvm24.png)
        
@@ -392,7 +392,7 @@ In this Exercise, we will install and configure FSLogix in the **AVD-HP01-SH-0**
 
     ![ws name.](media/w1.png)
      
-17. Click on **Users (1)**, then in the search bar paste your username **<inject key="AzureAdUserEmail" />** and then click on your user **(2)**.
+17. Click on **Users (1)**, then in the search bar paste your username **<inject key="AzureAdUserEmail"></inject>** and then click on your user **(2)**.
 
     ![ws name.](media/vd19.png)
     
@@ -400,26 +400,26 @@ In this Exercise, we will install and configure FSLogix in the **AVD-HP01-SH-0**
 
     ![ws name.](media-1/avd-47.png)
     
-19. Click on **OK** to *Sign out the user from VMs*.
+19. Click on **OK** to sign out the user from VMs.
 
     ![ws name.](media/avd-23.png)
 
-    >**Note:** This will log off the user **<inject key="AzureAdUserEmail" />** from both the session hosts, so that when the user signs in again to the session hosts, FSLogix will start functioning.
+    >**Note:** This will log off the user **<inject key="AzureAdUserEmail" enableCopy="false"/>** from both the session hosts, so that when the user signs in again to the session hosts, FSLogix will start functioning.
         
 20. Now paste the below-mentioned link in your browser in the JumpVM, and enter your **credentials** to log in.
 
     ```
     aka.ms/wvdarmweb
     ```
-    - Username: Paste username **<inject key="AzureAdUserEmail" />**, then click on **Next**.
+    - Username: Paste username **<inject key="AzureAdUserEmail"></inject>**, then click on **Next**.
    
     ![ws name.](media/w24.png)
 
-    - Password: Paste password **<inject key="AzureAdUserPassword" />** and click on **Sign in**.
+    - Password: Paste password **<inject key="AzureAdUserPassword"></inject>** and click on **Sign in**.
 
     ![ws name.](media/vd21.png)
 
-      >**Note:** If there's a dialog box saying ***Stay signed in***, then select the **No** option.
+      >**Note:** If there's a dialog box saying **Stay signed in**, then select the **No** option.
 
       ![](media/g10.png)
 
@@ -435,12 +435,12 @@ In this Exercise, we will install and configure FSLogix in the **AVD-HP01-SH-0**
 
     > **Note:** If you are unable to sign in using the provided password, try logging in with the **AzurePassword** available in the **AzureCreds** file on the desktop.
 
-    - Username: **<inject key="AzureAdUserEmail" />**
-    - Password: **<inject key="AzureAdUserPassword" />**
+    - Username: **<inject key="AzureAdUserEmail"></inject>**
+    - Password: **<inject key="AzureAdUserPassword"></inject>**
 
       ![ws name.](media/lab4-2.png)
         
-24. The desktop display will look similar to the screenshot below, showing ***Please wait for the FSLogix Apps Services***.
+24. The desktop display will look similar to the screenshot below, showing **Please wait for the FSLogix Apps Services**.
 
     ![ws name.](media/lab6-7.png)
     
@@ -456,13 +456,13 @@ In this Exercise, we will install and configure FSLogix in the **AVD-HP01-SH-0**
    
 ## Exercise 4: Verifying the User profiles stored in File Share
 
-In this exercise, we will be accessing the file share to verify the user profiles stored in the *.vhd* format.
+In this exercise, we will be accessing the file share to verify the user profiles stored in the .vhd format.
 
 1. Return to the Azure Portal, search for **storage accounts** in the search bar and click on **Storage Accounts** from the suggestions.
 
       ![ws name.](media/up10.png)
     
-2. Click on the storage account we created in *Task 1 step 3*  **(1)**, then under security + networking blade click on  **Networking (2)**.
+2. Click on the storage account **<inject key="Storage Account Name" enablecopy="false"/> (1)**, then under security + networking blade click on  **Networking (2)**.
 
       ![ws name.](media/vd23.png)
    

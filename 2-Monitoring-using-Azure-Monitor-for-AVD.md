@@ -1,4 +1,4 @@
-# Lab 2: Monitoring using Log Analytics
+# Lab 2(A): Monitoring using Log Analytics
 
 ### Estimated Duration: 30 Minutes
 
@@ -31,7 +31,7 @@ In this exercise, you will create a Log Analytics workspace by configuring basic
   
    - Resource group: Select **AVD-Hostpool-RG-avd (2)** from the drop-down.
   
-   - Name: **<inject key="Log Analytics Workspace Name	" /> (3)**
+   - Name: **<inject key="Log Analytics Workspace Name"></inject> (3)**
   
    - Region: Select **<inject key="Region" enableCopy="false"/> (4)** from the drop-down list
   

@@ -44,7 +44,7 @@ In this exercsie, you will create a new application group of type "RemoteApp" an
 
    ![ws name.](media-2/assignments.png)   
  
-1. Now in the search bar, copy and paste your **username: <inject key="AzureAdUserEmail" /> (1)**. Then under the search bar, click on your **username: <inject key="AzureAdUserEmail" enableCopy="false"/>(2)** to select it then click on the **Select(3)** button.
+1. Now in the search bar, copy and paste your **username: <inject key="AzureAdUserEmail"></inject> (1)**. Then under the search bar, click on your **username: <inject key="AzureAdUserEmail"></inject> (2)** to select it then click on the **Select(3)** button.
 
    ![ws name.](media/lab3-1.png)
    
@@ -58,7 +58,7 @@ In this exercsie, you will create a new application group of type "RemoteApp" an
 
 1. Then select **+ Add** in the **GS-AVD-HP - Application groups**  
 
-1. In the *Basics* tab, do the following configuration: 
+1. In the **Basics** tab, do the following configuration: 
 
    i. Leave the following parameters to default:
    
@@ -67,14 +67,14 @@ In this exercsie, you will create a new application group of type "RemoteApp" an
          
    ii. Fill in the remaining parameters below:  
    
-      - Resource Group: *Select* **AVD-Hostpool-RG-avd (1)** *from the dropdown*.
+      - Resource Group: Select **AVD-Hostpool-RG-avd (1)** from the dropdown.
       - Application Group Type: **RemoteApp (2)** 
       - Application Group Name: **AVD-AG-01 (3)**
       - Click on **Next: Applications > (4)**
 
          ![ws name.](media-2/avd-38n.png)
 
-1. On the *Applications* tab, click on **+ Add Applications** to add applications to this application group.
+1. On the **Applications** tab, click on **+ Add Applications** to add applications to this application group.
 
    ![ws name.](media/ag1.png)
 
@@ -108,7 +108,7 @@ In this exercsie, you will create a new application group of type "RemoteApp" an
 
    ![ws name.](media/ag3.png)
 
-1. Click on the **+Add Microsoft Entra users or user groups (1)**, then copy and paste your username **<inject key="AzureAdUserEmail" />** **(2)** in the search bar. When your username appears under the search bar, click on the  **username (3)**, and then click on the **Select (4)** button. This will give you access to the application group.
+1. Click on the **+Add Microsoft Entra users or user groups (1)**, then copy and paste your username **<inject key="AzureAdUserEmail"></inject>** **(2)** in the search bar. When your username appears under the search bar, click on the  **username (3)**, and then click on the **Select (4)** button. This will give you access to the application group.
  
    ![ws name.](media/L3-E1-S16a-1.png)
 

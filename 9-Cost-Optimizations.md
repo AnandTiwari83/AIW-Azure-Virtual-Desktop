@@ -85,7 +85,7 @@ In this task, you will through the process to understand the creation of a custo
     
     ![](media/roleass-v2.png)
     
-  - Click on **Review + assign**
+1. Click on **Review + assign**
 
 ## Exercise 2: Configure the Start VM on Connect feature
 
@@ -134,7 +134,7 @@ In this task, you will unsubscribe and resubscribe to the AVD workspace using th
 
    ![ws name.](media/137.png)
    
-1. Click on the **ellipses(...)** and select **Unsubscribe**. Click on **Yes** for any warning.
+1. Click on the **ellipsis(...)** and select **Unsubscribe**. Click on **Yes** for any warning.
 
    ![ws name.](media/lb16.png)
 
@@ -146,11 +146,11 @@ In this task, you will unsubscribe and resubscribe to the AVD workspace using th
 
 1. Enter the user credentials to access the workspace.
 
-   - Username: Paste the username **<inject key="AzureAdUserEmail" />** *then click on* **Next**.
+   - Username: Paste the username **<inject key="AzureAdUserEmail"></inject>** then click on **Next**.
 
      ![ws name.](media/vd55.png)
    
-   - Password: Paste the password  **<inject key="AzureAdUserPassword" />** *and click on* **Sign in**.
+   - Password: Paste the password  **<inject key="AzureAdUserPassword"></inject>** and click on **Sign in**.
 
       ![ws name.](media/vd6.png)
 
@@ -162,9 +162,9 @@ In this task, you will unsubscribe and resubscribe to the AVD workspace using th
 
    > **Note:** If you are unable to sign in using the provided password, try logging in with the **AzurePassword** available in the **AzureCreds** file on the desktop.
 
-   - Password: **<inject key="AzureAdUserPassword" />**
+   - Password: **<inject key="AzureAdUserPassword"></inject>**
    
-   ![ws name.](media/ch14.png)
+   ![ws name.](media/avd-14.png)
 
 1. Your virtual desktop will launch and look similar to the screenshot below. You can exit from the window by clicking on **X *i.e., the close button***. 
 

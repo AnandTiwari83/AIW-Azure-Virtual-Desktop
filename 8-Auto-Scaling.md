@@ -54,7 +54,7 @@ In this exercise, you will create an Azure Virtual Desktop scaling plan by first
 
     ![](./media/notepad.png)
     
-8. In the JSON file, replace the subscription ID with **<inject key="Subscription Name" />** and Save the changes by clicking on **File (1) -> Save (2).**
+8. In the JSON file, replace the subscription ID with **<inject key="Subscription Name"></inject>** and save the changes by clicking on **File (1) -> Save (2).**
 
     ![](./media/avd-36.png)       
 
@@ -206,10 +206,7 @@ In this exercise, you will create an Azure Virtual Desktop scaling plan by first
       >
       >Here, you will learn about the scaling tool built with the Azure Automation account and Azure Logic App that automatically scales session host VMs in your Azure Virtual Desktop environment. 
       >
-      > Please follow the link given below to learn more about this feature. 
-      ```
-      https://docs.microsoft.com/en-us/azure/virtual-desktop/set-up-scaling-script
-      ```
+      > Please follow the link given below to learn more about this feature. [Scale session hosts using Azure Automation ](https://docs.microsoft.com/en-us/azure/virtual-desktop/set-up-scaling-script)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 - Scroll down and hit the Validate button in the lab guide for the corresponding task. If you receive a success message, you can proceed to the next task.

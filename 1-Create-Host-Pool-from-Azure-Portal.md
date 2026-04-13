@@ -101,15 +101,15 @@ In this exercise, you will create an Azure Virtual Desktop (AVD) host pool using
 - **Domain to join**
 
    - Select which directory you would like to join: **Active Directory (1)**
-   - AD domain join UPN: **<inject key="AzureAdUserEmail" /> (2)**
+   - AD domain join UPN: **<inject key="AzureAdUserEmail"></inject> (2)**
    - Password: **Use the password form AzureCreads file (3)**
    - Confirm password: **Use the password form AzureCreads file (4)**
 
 - **Virtual machine administrator account**
 
    - User name: **odl_user_<inject key="DeploymentID" enableCopy="false"/>(5)**
-   - Password: **<inject key="AzureAdUserPassword" enableCopy="false"/>1234 (6)**
-   - Confirm password: **<inject key="AzureAdUserPassword" enableCopy="false"/>1234 (7)**
+   - Password: **Password!1234 (6)**
+   - Confirm password: **Password!1234 (7)**
 
       ![ws name.](media/vd9.png)
 

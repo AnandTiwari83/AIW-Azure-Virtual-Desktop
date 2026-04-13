@@ -108,8 +108,8 @@ In this exercise, you will create an Azure Virtual Desktop (AVD) host pool using
 - **Virtual machine administrator account**
 
    - User name: **odl_user_<inject key="DeploymentID" enableCopy="false"/>(5)**
-   - Password: **<inject key="AzureAdUserPassword" enableCopy="false"/>1234 (6)**
-   - Confirm password: **<inject key="AzureAdUserPassword" enableCopy="false"/>1234 (7)**
+   - Password: **<inject key="AzureAdUserPassword" />1234 (6)**
+   - Confirm password: **<inject key="AzureAdUserPassword" />1234 (7)**
 
       ![ws name.](media/vd9.png)
 

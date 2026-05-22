@@ -27,6 +27,8 @@ In this exercise, you will access the published RemoteApp application by configu
 
 1. Navigate to **GS-AVD-HP**.
 
+   ![ws name.](media/hostpoool.png)
+
 1. Then go to **RDP Properties (1)** under **Settings** blade. Under the **Device redirection (2)**, for the **Clipboard redirection** select the **Clipboard on local computer is available in remote session (3)** form the drop down and click **Save (4)**.
 
     ![ws name.](media/avd-0704.png)
@@ -109,7 +111,8 @@ In this exercise, you will access the published AVD desktop by updating the host
     ![ws name.](media/avd-9.png)
 
 1. Navigate to **GS-AVD-HP**, then go to **Properties (1)**. Under the **Preferred app group type**, choose **Desktop (2)** and click **Save (3)**.
-
+   ![ws name.](media/hostpoool.png)
+   
     ![ws name.](media/avd-9na.png)
    
 1. Refresh the **Remote Desktop Web Client** page.

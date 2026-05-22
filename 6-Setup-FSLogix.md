@@ -12,14 +12,14 @@ The Azure Virtual Desktop service, recommends FSLogix profile containers as a us
 
 In this lab, you will complete the following exercises:
 
-- Exercise 1: Create Storage account and file share
-- Exercise 2: Configure File Share
+- Exercise 1: Create Storage account and Classic File Share
+- Exercise 2: Configure Classic File Share
 - Exercise 3: Configure Session Hosts
-- Exercise 4: Verifying the User profiles stored in File Share
+- Exercise 4: Verifying the User profiles stored in Classic File Share
 
-## Exercise 1: Create Storage account and file share
+## Exercise 1: Create Storage account and Classic File Share
 
-In the exercsie, we will be creating a storage account with a file share which will be used to store user profiles for FSlogix.
+In the exercsie, we will be creating a storage account with a Classic File Share which will be used to store user profiles for FSlogix.
 
 1. Navigate to the Azure portal, search for **Storage accounts** in the search bar, and select **Storage accounts** from the suggestions.
 
@@ -48,12 +48,8 @@ In the exercsie, we will be creating a storage account with a file share which w
    - At last, click on **Next (8)**
    
       ![ws name.](media/avdstoargen.png)
-   
-4. On the **Advanced** tab, make sure to enable **Require secure transfer for REST API operations**, **Allow enabling anonymous access on individual containers**, and **Enable storage account key access** options. Once enabled, click on the **Next** button.
 
-   ![ws name.](media/lab6-2n.png)
-
-5. In the **Networking** tab, use the following configurations:
+4. In the **Networking** tab, use the following configurations:
 
    - Public network access: **Enable (1)** 
    - Public network access scope: **Enable from selected virtual networks and IP addresses (2)**
@@ -66,6 +62,10 @@ In the exercsie, we will be creating a storage account with a file share which w
 
       ![ws name.](media/lab6-3n.png)
 
+5. On the **Security** tab, make sure   to enable **Require secure t   ransfer for REST API operations**, **Allow enabling anonymous access on individual containers**, and **Enable storage account key access** (1) options. Once enabled, click on the **Next(2)** button.
+
+   ![ws name.](media/lab6-2n.png)
+
 6. Click on **Create**.
 
    ![ws name.](media/up3.png)
@@ -74,7 +74,7 @@ In the exercsie, we will be creating a storage account with a file share which w
 
    ![ws name.](media/a59n.png)
    
-8. In the storage account, click on **File shares (1)** present under **Data storage** blade. Then click on **Not configured (2)** under **File share settings** page.
+8. In the storage account, click on **Classic File Shares (1)** present under **Data storage** blade. Then click on **Not configured (2)** under **Classic File Share settings** page.
 
    ![ws name.](media-2/L6E1S8.png)
 
@@ -82,33 +82,33 @@ In the exercsie, we will be creating a storage account with a file share which w
 
    ![ws name.](media-2/L6E1S9-new.png)
 
-10. Select **Enable Microsoft Entra Domain Services (Microsoft Entra DS) for this file share (1)** and then click on **Save (2)**.
+10. Select **Enable Microsoft Entra Domain Services (Microsoft Entra DS) for this Classic File Share (1)** and then click on **Save (2)**.
      
     ![ws name.](media-2/L6E1S10.png)
     
-    >**Note:** Setting this property implicitly **domain joins** the storage account with the associated Azure AD DS deployment. Azure AD DS authentication over SMB is then enabled for all new and existing file shares in the storage account.
+    >**Note:** Setting this property implicitly **domain joins** the storage account with the associated Azure AD DS deployment. Azure AD DS authentication over SMB is then enabled for all new and existing Classic File Share in the storage account.
  
-11. Return to the **<inject key="Storage Account Name" enableCopy="false"/>**  storage account and on the left pane, click on **File shares (1)** present under **Data Storage**, then click on **Refresh (2)** a few times until the status of the Active Directory changes to **Configured (3)** before continuing.
+11. Return to the **<inject key="Storage Account Name" enableCopy="false"/>**  storage account and on the left pane, click on **Classic File Share (1)** present under **Data Storage**, then click on **Refresh (2)** a few times until the status of the Active Directory changes to **Configured (3)** before continuing.
 
     ![ws name.](media-2/avd-48.png)
  
-12. On **File shares (1)** page, click on  **+ File share (2)**.
+12. On **Classic File Share (1)** page, click on  **+ Classic File Share (2)**.
 
     ![ws name.](media-2/avd-49.png)
  
-13. Enter the following name for your file share.
+13. Enter the following name for your Classic File Share.
     
     - Name: **userprofile (1)**   
     - Access tier: **Transaction Optimized (2)**
-    - Click on **Review + create (3)**, and then **Create** this will create the file share.
+    - Click on **Review + create (3)**, and then **Create** this will create the Classic File Share.
     
       ![ws name.](media/avd-50n.png)
 
       ![ws name.](media/lab6-5n.png)
 
-## Exercise 2: Configure File Share
+## Exercise 2: Configure Classic File Share
 
-In this exercise, we will give Storage File Data SMB Share Contributor permissions to **permission - fslogixcontainer** group which you'll be creating so that their profiles can be stored in the file shares.
+In this exercise, we will give Storage File Data SMB Share Contributor permissions to **permission - fslogixcontainer** group which you'll be creating so that their profiles can be stored in the Classic File Share.
 
 1. Navigate to the Azure portal, then search for **Microsoft Entra ID (1)** in the search bar and select **Microsoft Entra ID (2)** from the suggestions.
    
@@ -128,7 +128,8 @@ In this exercise, we will give Storage File Data SMB Share Contributor permissio
    - Click on **Create (2)**.
 
       ![ws name.](media/avd-18.png)
-   
+   >**Note:** If you face errors such as "**name already exists**" or "**name not available**" while creating the group, Your organization might have already created it. In that case, you can find it in the next step under the All groups section.
+
 1. Go to **All Groups (1)**, then click on the **permission - fslogixcontainer (2)** group to open it.
 
    ![ws name.](media/vd14.png)
@@ -141,11 +142,11 @@ In this exercise, we will give Storage File Data SMB Share Contributor permissio
 
    ![ws name.](media/vd15.png)
    
-1. Navigate to Storage Account **<inject key="Storage Account Name" enableCopy="false"/>**, select **File Shares (1)** under Data Storage and click on **userprofile (2)** to open file share we created earlier.
+1. Navigate to Storage Account **<inject key="Storage Account Name" enableCopy="false"/>**, select **Classic File Share (1)** under Data Storage and click on **userprofile (2)** to open Classic File Share we created earlier.
 
    ![ws name.](media/avd-19.png)
      
-   >**Note:** The user won't have access to file share until we perform the next steps of this task. 
+   >**Note:** The user won't have access to Classic File Share until we perform the next steps of this task. 
 
 1. Click on **Access Control (IAM) (1)**, then click on **Add (2)** and select **Add role assignment (3)**.
 
@@ -158,9 +159,9 @@ In this exercise, we will give Storage File Data SMB Share Contributor permissio
      ![ws name.](media/avd-20.png)
    
       >**Note:** There are three Azure built-in roles for granting share-level permissions to users:
-      > - **Storage File Data SMB Share Reader** allows read access in Azure Storage file shares over SMB.
-      > - **Storage File Data SMB Share Contributor** allows read, write, and delete access in Azure Storage file shares over SMB.
-      > - **Storage File Data SMB Share Elevated Contributor** allows read, write, delete, and modify Windows ACLs in Azure Storage file shares over SMB.
+      > - **Storage File Data SMB Share Reader** allows read access in Azure Storage Classic File Shares over SMB.
+      > - **Storage File Data SMB Share Contributor** allows read, write, and delete access in Azure Storage Classic File Shares over SMB.
+      > - **Storage File Data SMB Share Elevated Contributor** allows read, write, delete, and modify Windows ACLs in Azure Storage Classic File Shares over SMB.
    
    - Under the **Members** tab, follow the below steps:
 
@@ -285,7 +286,7 @@ In this Exercise, we will install and configure FSLogix in the **AVD-HP01-SH-0**
    >
    >ii) Configure the required registries
    > 
-   >iii) Set the profile container location to the Azure file share location we created.
+   >iii) Set the profile container location to the Azure Classic File Share location we created.
 
 7. In line 2 in the script, replace **NameofStorageAccount** with **<inject key="Storage Account Name"></inject>** and then click on **Run** to execute the script.
      ![ws name.](media/jvm24.png)
@@ -306,7 +307,7 @@ In this Exercise, we will install and configure FSLogix in the **AVD-HP01-SH-0**
         
 12. **Copy** the script given below and paste it by using **Ctrl + V** in the Powershell window. 
 
-      >**Note :** **Do Not** run the script right away.
+      >**Note :** **Please Do Not** run the script right away.
 
       ```
       # Variables
@@ -376,7 +377,7 @@ In this Exercise, we will install and configure FSLogix in the **AVD-HP01-SH-0**
       > 
       > ii) Configure the required registries
       > 
-      >iii) Set the profile container location to the Azure file share location we created.
+      >iii) Set the profile container location to the Azure Classic File Share location we created.
 
 13. In line 2 in the script, replace **NameofStorageAccount** with **<inject key="Storage Account Name"></inject>** and then click on **Run** to execute the script.
 
@@ -425,7 +426,7 @@ In this Exercise, we will install and configure FSLogix in the **AVD-HP01-SH-0**
 
 21. Click on the **Session Desktop** Desktop to launch it.
 
-    ![ws name.](media/ex4t2s2.png)
+    ![ws name.](media/labinst24.png)
 
 22. Select **Allow** on the prompt asking permission to access local resources.
 
@@ -454,9 +455,9 @@ In this Exercise, we will install and configure FSLogix in the **AVD-HP01-SH-0**
 
     ![ws name.](./media/vd22.png)
    
-## Exercise 4: Verifying the User profiles stored in File Share
+## Exercise 4: Verifying the User profiles stored in Classic File Share
 
-In this exercise, we will be accessing the file share to verify the user profiles stored in the .vhd format.
+In this exercise, we will be accessing the Classic File Share to verify the user profiles stored in the .vhd format.
 
 1. Return to the Azure Portal, search for **storage accounts** in the search bar and click on **Storage Accounts** from the suggestions.
 
@@ -474,13 +475,13 @@ In this exercise, we will be accessing the file share to verify the user profile
 
    ![ws name.](media/avd-25a.png)
 
-   >**Note:** This will enable access to your storage account on the public network so that you can see the user profiles stored in the file shares.
+   >**Note:** This will enable access to your storage account on the public network so that you can see the user profiles stored in the Classic File Shares.
     
 4. Open the storage account we created earlier **(1)**, then select **Fileshare (2)** from the left side menu and the select **userprofile (3)** fileshare.
 
       ![ws name.](media/vd24.png)
       
-5. Click on **Browse (1)**, and you will see the user **folder (2)** created in the file share, click on the folder.
+5. Click on **Browse (1)**, and you will see the user **folder (2)** created in the Classic File Share, click on the folder.
 
       ![ws name.](media-1/avd-27.png) 
 
@@ -488,9 +489,9 @@ In this exercise, we will be accessing the file share to verify the user profile
 
       ![ws name.](media-2/userprofile.png)
 
-   >**Note:** It might take some time for the User Profile folder to appear in the file share. If you do not see the folder now, continue with the lab and check back later after completing it.
+   >**Note:** It might take some time for the User Profile folder to appear in the Classic File Share. If you do not see the folder now, continue with the lab and check back later after completing it.
 
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 - Scroll down and hit the Validate button in the lab guide for the corresponding task. If you receive a success message, you can proceed to the next task.
 - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
@@ -498,7 +499,7 @@ In this exercise, we will be accessing the file share to verify the user profile
 
 ## Summary
 
-In this lab, you configured FSLogix profile containers for Azure Virtual Desktop by creating a storage account, enabling Entra Domain Services authentication, and setting up a profile file share. You then assigned appropriate access permissions, installed and configured FSLogix on the session hosts, updated AVD host pool settings, and verified successful roaming profile functionality across the virtual desktop environment.
+In this lab, you configured FSLogix profile containers for Azure Virtual Desktop by creating a storage account, enabling Entra Domain Services authentication, and setting up a profile Classic File Share. You then assigned appropriate access permissions, installed and configured FSLogix on the session hosts, updated AVD host pool settings, and verified successful roaming profile functionality across the virtual desktop environment.
 
 Now, click on **Next** from the lower right corner to move on to the next page.
 

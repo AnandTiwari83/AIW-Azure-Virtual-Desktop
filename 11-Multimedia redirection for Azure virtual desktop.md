@@ -63,6 +63,10 @@ In this exercise, you will configure Multimedia Redirection (MMR) for Azure Virt
 1. After the desktop has loaded, search for **Teams (1)** and click **Open (2)**, as shown in the screenshot below.
 
    ![ws name.](./media/teamsopenn.png)
+1. You might see the popup stating Teams Need an Update then **Click on Open teams on web.** And login with  **<inject key="AzureAdUserEmail"></inject>**
+    
+    ![ws name.](./media/Checkweb.png)
+   >**Note:** It will open Microsoft Teams in the Microsoft Edge browser and prompt you to sign in. Please enter your username and password to log in to Teams on the web browser.
 
 1. In the Everyone together in Teams pane, click on **Sign in** as **<inject key="AzureAdUserEmail"></inject>**.
 

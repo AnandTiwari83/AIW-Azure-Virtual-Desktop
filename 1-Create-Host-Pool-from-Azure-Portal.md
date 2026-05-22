@@ -18,10 +18,9 @@ In this lab, you will complete the following exercise:
 
 In this exercise, you will create an Azure Virtual Desktop (AVD) host pool using the Getting Started Wizard, including setting up session hosts, domain join, and registering the workspace.
 
-**Important**
+   >**Important:** From your LabVM Desktop, Open the AzureCreds file and **Copy** the AzurePassword provided in the Notepad. This is the permanent password for the lab. Since Temporary Access Pass (TAP) is being used, you may be required to use this password in certain steps, such as when signing in to the session host or accessing applications like Excel and Word within the session.
 
-**From your LabVM Desktop, open the AzureCreds file and copy the AzurePassword provided in the Notepad. This is the permanent password for the lab. Since Temporary Access Pass (TAP) is being used, you may be required to use this password in certain steps, such as when signing in to the session host or accessing applications like Excel and Word within the session.**
-
+   
    ![ws name.](media/2avd1at.png)
 
 1. On the **Azure portal,** search for **Azure Virtual Desktop** **(1)** in the search bar and select **Azure Virtual Desktop** **(2)** from the suggestions.
@@ -148,7 +147,7 @@ In this exercise, you will create an Azure Virtual Desktop (AVD) host pool using
 
       ![ws name.](media/L1E1S19.png)
 
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 - Scroll down and hit the Validate button in the lab guide for the corresponding task. If you receive a success message, you can proceed to the next task.
 - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.

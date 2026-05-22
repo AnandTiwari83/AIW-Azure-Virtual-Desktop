@@ -14,15 +14,15 @@ As explained in the General Hierarchy section, an Application Group is a logical
 
 ## Lab objective
 
-In this lab, you will complete the following exercise:
+In this lab, You will complete the following exercise:
 
 - Exercise 1: Create an Application Group
 
 ### Exercise 1: Create an Application Group
 
-An application group of type ‘Desktop’, was created automatically while creating the Session Host in the previous exercise. 
+An application group of type ‘Desktop’ was created automatically while creating the Session Host in the previous exercise. 
 
-In this exercsie, you will create a new application group of type "RemoteApp" and publish two applications in it. Also, we will assign users to both application groups.
+In this exercsie, You will create a new application group of type "RemoteApp" and publish two applications in it. Also, we will assign users to both application groups.
 
 1. Navigate to the Azure portal, Search for **Azure Virtual Desktop** in the search bar and select **Azure Virtual Desktop** from the search results.
 
@@ -44,7 +44,7 @@ In this exercsie, you will create a new application group of type "RemoteApp" an
 
    ![ws name.](media-2/assignments.png)   
  
-1. Now in the search bar, copy and paste your **username: <inject key="AzureAdUserEmail"></inject> (1)**. Then under the search bar, click on your **username: <inject key="AzureAdUserEmail"></inject> (2)** to select it then click on the **Select(3)** button.
+1. Now in the search bar, copy and paste your **Username: <inject key="AzureAdUserEmail"></inject> (1)**. Then under the search bar, click on your **Username: <inject key="AzureAdUserEmail"></inject> (2)** to select it then click on the **Select(3)** button.
 
    ![ws name.](media/lab3-1.png)
    
@@ -138,7 +138,7 @@ In this exercsie, you will create a new application group of type "RemoteApp" an
 
    ![ws name.](media/uiupdate04.png)
 
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 - Scroll down and hit the Validate button in the lab guide for the corresponding task. If you receive a success message, you can proceed to the next task.
 - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.

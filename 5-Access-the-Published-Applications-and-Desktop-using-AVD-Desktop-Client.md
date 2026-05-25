@@ -9,7 +9,7 @@ Contoso wants their AVD environment to be flexible in terms of accessing the ses
 
 In this lab, we will access the Desktop and RemoteApps assigned to us in the previous exercise using the AVD Desktop client.
 
-## Lab objective
+## Lab objectives
 
 In this lab, you will complete the following exercises:
 

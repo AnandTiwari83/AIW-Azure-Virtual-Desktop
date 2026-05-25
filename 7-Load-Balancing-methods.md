@@ -39,7 +39,7 @@ In this exercise, you will add new users to Microsoft Entra ID, assign them to t
 1. Click on **+ New user (1)** and select **Create new user (2)** from drop-down to add a new user.
 
    ![ws name.](media-1/lab7-ex1-s3.png)
-
+   >**Note:** In some cases, the users might already be created. If you find that the users are already available, you can skip these steps and continue directly from the 8th point. Please recheck whether the membership is assigned; if it is assigned, continue from the 8th point, otherwise perform the steps below.
 1. Add the following configurations under the *Basics* tab and leave the rest to default:
 
    - User principal name: **AVDUser01 (1)**
@@ -135,7 +135,7 @@ In this exercise, you will use PowerShell to run a script that resets the passwo
     ![ws name.](media/vd30.png)
     ![ws name.](media/vd29.png) 
 
-  >**Note**: ***Username*** and ***Password*** for ***AVDUser01*** and ***AVDUser02*** is present in Environment Details tab.
+   >**Note**: ***Username*** and ***Password*** for ***AVDUser01*** and ***AVDUser02*** is present in Environment Details tab.
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    - If you receive a success message, you can proceed to the next task.

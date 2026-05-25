@@ -27,7 +27,7 @@ In this exercise, you will create a Log Analytics workspace by configuring basic
 
 1. Now add the following configurations:
 
-   - Subscription: Leave it to **default (1)**
+   - Subscription: Leave it to **Default (1)**
   
    - Resource group: Select **AVD-Hostpool-RG-avd (2)** from the drop-down.
   
@@ -59,7 +59,7 @@ In this exercise, you will enable diagnostics for the AVD workspace by configuri
 
    ![ws name.](media/L2AE2S2.png)
    
-1. On the **Insights** page, select the following values.
+1. On the **Insights** page, Select the following values.
    
    - Subscription: **Choose the default subscription (1)**
    - Resource group: **avd-hostpool-rg-avd (2)**
@@ -90,6 +90,10 @@ In this exercise, you will enable diagnostics for the AVD workspace by configuri
 1. On the **Deploy template** page, the diagnostic settings for the host pool are automated using a template. Look through the categories seleted and click on **deploy**.
 
    ![ws name.](media/avd-5.png)
+
+   > **Note**: Sometimes the Host Pool may already be preconfigured automatically, and you may see something similar to the screenshot below. In that case, you can skip the manual configuration steps and continue directly from Point 3.
+
+   ![ws name.](media/la8888.png)
    
 1. Once the deployment is successful, **Refresh** the **CheckAMAConfiguration** page. You'll be able to see the settings applied to the host pool.
 
@@ -115,7 +119,7 @@ In this exercise, you will enable diagnostics for the AVD workspace by configuri
 
    ![ws name.](media/L2AE2S12a.png)
 
-1. On the **Deploy template** page, click on **deploy**.
+1. On the **Deploy template** page, Click on **deploy**.
 
 1. Once the deployment is successful, **Refresh** the **CheckAMAConfiguration** page 2-3 times as it takes some time to load the details. You'll be able to see the Data Collection rule has been created.
 
@@ -140,7 +144,7 @@ In this exercise, you will enable diagnostics for the AVD workspace by configuri
    ![ws name.](media/L2AE2S17.png)
 
 
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 - Scroll down and hit the Validate button in the lab guide for the corresponding task. If you receive a success message, you can proceed to the next task.
 - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.

@@ -9,14 +9,14 @@ Contoso wants their AVD environment to be flexible in terms of accessing the ses
 
 In this lab, we will access the Desktop and RemoteApps assigned to us in the previous exercise using the AVD Desktop client.
 
-## Lab objective
+## Lab objectives
 
 In this lab, you will complete the following exercises:
 
 - Exercise 1: Access the Published Applications
 - Exercise 2: Access the Virtual Desktop
 
->#### **Note:** You have to perform this exercise in **Your Own PC/computer/workstation.** Do not perform this exercise within the JumpVM.
+>**Note:** You have to perform this exercise in **Your Own PC/Computer/Workstation.** Do not perform this exercise within the JumpVM.
 
 ## Exercise 1: Access the Published Applications
 
@@ -24,7 +24,7 @@ In this exercise, you will install and configure the Remote Desktop client on yo
 
 1. Open a browser in **Your Own PC/computer/workstation** (not within the JumpVM), copy and paste the following URL in that browser tab.
 
-   >**Note:** It is recommended to install and use the Remote Desktop client directly on your personal/local PC instead of within the provided VM. This ensures better performance, minimizes dependency on the VM, and offers a more isolated and seamless experience.
+   >**Note:** It is recommended to install and use the Remote Desktop client directly on your Personal / Local PC instead of within the provided VM. This ensures better performance, minimizes dependency on the VM, and offers a more isolated and seamless experience.
 
    ```
    https://learn.microsoft.com/en-us/previous-versions/remote-desktop-client/connect-windows-cloud-services?tabs=windows-msrdc-msi
@@ -79,6 +79,7 @@ In this exercise, you will install and configure the Remote Desktop client on yo
    ![ws name.](media/avd-9.png)
 
 1. Navigate to **GS-AVD-HP**, then go to **Properties (1)**. Under the **Preferred app group type**, choose **RemoteApp (2)** and click **Save (3)**.
+   ![ws name.](media/hostpoool.png)
 
    ![ws name.](media/avd-39.png)
 
@@ -112,15 +113,15 @@ In this exercise, you will install and configure the Remote Desktop client on yo
 
    ![ws name.](media/vd13.png)
 
-1. Return back to the Azure Portal, search for **Azure virtual desktop** in the search bar, and select **Azure Virtual Desktop** from the suggestions.
+1. Return back to the Azure Portal, search for **Azure virtual desktop(1)** in the search bar, and select **Azure Virtual Desktop(2)** from the suggestions.
 
    ![ws name.](media/w1.png)
 
-1. Click on **User (1)** under **Manage** blade, then paste **<inject key="AzureAdUserEmail"></inject> (2)** in the search bar and click on your user to open it **(3).**
+1. Click on **User (1)** under **Manage** blade, then Paste **<inject key="AzureAdUserEmail"></inject> (2)** in the search bar and click on your user to Open it **(3).**
 
    ![ws name.](media/avd-12.png)
 
-1. Click on the **Sessions (1)** tab, select the Host pool by clicking on the checkbox **(2)** and then click on the **Sign out (3)** button.
+1. Click on the **Sessions (1)** tab, select the Host pool by clicking on the **Checkbox(2)** and then click on the **Sign out (3)** button.
 
     ![ws name.](media-1/avd-47.png)
 
@@ -141,7 +142,7 @@ In this exercise, you will access the full AVD Session Desktop by updating the h
    ![ws name.](media/avd-9.png)
 
 1. Navigate to **GS-AVD-HP**, then go to **Properties (1)**. Under the **Preferred app group type**, choose **Desktop (2)** and click **Save (3)**.
-
+   ![ws name.](media/hostpoool.png)
     ![ws name.](media/avd-9na.png)
 
 1. Return to WVD client application then click on the **ellipis (...) (1)**, and then select **Refresh (2)**.

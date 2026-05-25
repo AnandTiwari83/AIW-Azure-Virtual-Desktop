@@ -2,13 +2,13 @@
 
 ## Overall Estimated Duration: 8 hours
 
-## Overview
+## Scenario
 
 Contoso IT Consulting Services is a fast-growing technology consulting firm headquartered in Los Angeles, California. With expansion across North America and a distributed workforce that includes remote consultants, Contoso IT is seeking scalable and secure ways to deliver critical IT resources to its employees.To support this growth, Contoso wants to implement a proof of concept (POC) that evaluates Azure Virtual Desktop (AVD) as a platform for securely delivering virtual desktops and applications to its workforce, regardless of their location.
 
 In this hands-on lab, you’ll take on the role of an Azure Consultant to help Contoso’s IT team deploy and configure an AVD environment that supports secure remote work and centralized management.
 
-## Objective
+## Objectives
 
 This lab is designed to equip participants with hands-on experience in deploying and managing an Azure Virtual Desktop (AVD) environment, including host pool creation, application publishing, user access, performance monitoring, cost optimization, and security. Participants will work through real-world scenarios to build a robust virtual desktop infrastructure.
 
@@ -49,10 +49,11 @@ This hands-on exercise provides an overview of joining AVD session hosts directl
 
 * **Monitoring using Azure Monitor for AVD**: This hands-on exercise aims to use Azure Monitor to visualize AVD performance and diagnostics. Participants will access data collected from Log Analytics to track session behavior and host pool health.
 
-### Prerequisites
+## Prerequisites
 
 Participants should have:
-
+* An active Microsoft Azure subscription to deploy and manage Azure resources.
+* An Azure Entra ID user account with sufficient permissions to create and manage resources within the Azure subscription.
 * Basic understanding of Azure Virtual Desktop (AVD) components, such as Host Pools, Session Hosts, and Application Groups
 * Familiarity with Azure Active Directory (AAD) for authentication and identity management
 * Understanding of FSLogix Profile Containers and their use in non-persistent session environments
@@ -91,13 +92,13 @@ Welcome to your Azure Virtual Desktop Workshop! We've prepared a seamless enviro
 
 ## Accessing Your Lab Environment
 
-Once you're ready to dive in, your virtual machine and guide will be right at your fingertips within your web browser.
+Once you're ready to dive in, your **Virtual Machine** and **Guide** will be right at your fingertips within your web browser.
  
 ![Access Your VM and Lab Guide](./media/vd1.png)
 
 ## Lab Guide Zoom In/Zoom Out
 
-To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
+To adjust the zoom level for the environment page, click the **A↕** icon located next to the timer in the lab environment.
 
 ![](./media/vd4.png)
 

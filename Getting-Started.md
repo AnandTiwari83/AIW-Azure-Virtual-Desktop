@@ -2,7 +2,7 @@
 
 ## Overall Estimated Duration: 8 hours
 
-## Overview
+## Lab Scenario
 
 Contoso IT Consulting Services is a fast-growing technology consulting firm headquartered in Los Angeles, California. With expansion across North America and a distributed workforce that includes remote consultants, Contoso IT is seeking scalable and secure ways to deliver critical IT resources to its employees.To support this growth, Contoso wants to implement a proof of concept (POC) that evaluates Azure Virtual Desktop (AVD) as a platform for securely delivering virtual desktops and applications to its workforce, regardless of their location.
 

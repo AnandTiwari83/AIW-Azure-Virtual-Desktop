@@ -20,7 +20,6 @@ In this exercise, you will create an Azure Virtual Desktop (AVD) host pool using
 
    >**Important:** From your LabVM Desktop, Open the AzureCreds file and **Copy** the AzurePassword provided in the Notepad. This is the permanent password for the lab. Since Temporary Access Pass (TAP) is being used, you may be required to use this password in certain steps, such as when signing in to the session host or accessing applications like Excel and Word within the session.
 
-   
    ![ws name.](media/2avd1at.png)
 
 1. On the **Azure portal,** search for **Azure Virtual Desktop** **(1)** in the search bar and select **Azure Virtual Desktop** **(2)** from the suggestions.
@@ -98,6 +97,12 @@ In this exercise, you will create an Azure Virtual Desktop (AVD) host pool using
 1. Enter the required details for **Domain to join** and **Virtual machine administrator account** as specified below, then click **Next: Workspace > (8)**
 
 - **Domain to join**
+
+   >**Note:** Retrieve Azure Credentials from the AzureCreds File
+   > - On the desktop, locate and double-click the **AzureCreds** file to open it in Notepad.
+   > - In the Notepad file, review the listed credentials and **copy the value of `AzurePassword`**.
+   
+     ![ws name.](media/2avd1at.png)
 
    - Select which directory you would like to join: **Active Directory (1)**
    - AD domain join UPN: **<inject key="AzureAdUserEmail"></inject> (2)**
